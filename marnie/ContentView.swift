@@ -10,80 +10,53 @@ import AVFoundation
 
 struct ContentView: View {
     
-    let fruits: [String] = [
-        "ананас",
-        "абрикос",
-        "айва",
-        "апельсин",
-        "арбуз",
-        "банан",
-        "виноград",
-        "гранат",
-        "грейпфрут",
-        "груша",
-        "гуава",
-        "дыня",
-        "инжир",
-        "киви",
-        "лимон",
-        "манго",
-        "персик",
-        "помело",
-        "финик",
-        "хурма"
-    ]
+    @StateObject private var vm = SpellingViewModel()
+    @FocusState fileprivate var isFocused: Bool
+    @State private var playerInput: String = ""
     
-    @State var gameIsOn = false
-    @State var phrase: String = " "
-    @State private var input: String = ""
-    @FocusState private var isFocused: Bool
-
     var body: some View {
         
         VStack {
-            Text(phrase)
+            Text(vm.phrase)
                 .font(.title)
                 .fontWeight(.bold)
                 .padding()
-            TextField("", text: $input)
+                .onChange(of: vm.phrase) { _ in
+                    self.playerInput = ""
+                }
+            TextField("", text: $playerInput)
                 .multilineTextAlignment(.center)
                 .font(.title)
                 .disableAutocorrection(true)
                 .textCase(.lowercase)
                 .autocapitalization(.none)
                 .focused($isFocused)
-                .onChange(of: input) { [input] newValue in
-                    
-                    if self.phrase.hasPrefix(newValue) {
-                        self.input = newValue
-                        
-                        let diffInLength = newValue.count - input.count
-                        if diffInLength > 0 && diffInLength <= newValue.count {
-                            utter(String(newValue.suffix(diffInLength)))
+                .onChange(of: playerInput) { [playerInput] newValue in
+                    vm.playerInputDidChange(from: playerInput, to: newValue)
+                    self.playerInput = vm.playerInput
+                }
+            
+            ScrollView(.horizontal) {
+                LazyHStack {
+                    ForEach(vm.imageUrls, id: \.self) { imageUrl in
+                        AsyncImage(url: URL(string: imageUrl)) { image in
+                            image.resizable()
+                        } placeholder: {
+                            Color.gray
                         }
-                        
-                        // pronounce letter
-                    } else {
-                        self.input = input
-                    }
-                    
-                    if self.phrase == newValue {
-                        isFocused = false
-                        
-                        
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                            utterSlowly(phrase)
-                            gameIsOn = false
-                        }
-                        // game won
-                        // pronounce the word
-                        // go to next phrase
+                        .frame(width: 256, height: 256)
+                        .clipShape(RoundedRectangle(cornerRadius: 25))
                     }
                 }
-            if !gameIsOn {
+            }
+            
+            
+            
+            if !vm.gameIsOn {
                 Spacer()
                 Button(action: {
-                    startNewGame()
+                    vm.startNewGame()
+                    isFocused = true
                 }) {
                     Text("New game")
                         .padding()
@@ -91,38 +64,111 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .background(.blue)
                         .cornerRadius(15)
-                    }
                 }
-                
+            }
+            
             Spacer()
         }
     }
-    
-    func startNewGame() {
-        self.phrase = fruits.randomElement() ?? "NULL"
-        self.input = ""
-        self.gameIsOn = true
-        self.isFocused = true
-    }
-    
-    func utter(_ text: String) {
-        let utterance = AVSpeechUtterance(string: text)
-        utterance.voice = AVSpeechSynthesisVoice(language: "ru")
+}
 
-        let synthesizer = AVSpeechSynthesizer()
-        synthesizer.speak(utterance)
-    }
+extension ContentView {
     
-    func utterSlowly(_ text: String) {
-        let utterance = AVSpeechUtterance(string: text)
-        utterance.voice = AVSpeechSynthesisVoice(language: "ru")
+    class SpellingViewModel: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
 
-        utterance.rate = 0.4
+        @Published fileprivate var gameIsOn = false
+        @Published fileprivate var phrase: String = " "
+        @Published fileprivate var imageUrls = [String]()
+        fileprivate var playerInput: String = ""
+        private let synthesizer = AVSpeechSynthesizer()
         
-        let synthesizer = AVSpeechSynthesizer()
-        synthesizer.speak(utterance)
+        var category = ""
+        var words = [String]()
+        
+        func startNewGame() {
+            gameIsOn = true
+            
+            category = contentDictionary.keys.randomElement() ?? ""
+            words = contentDictionary[category] ?? []
+            
+            goToNextPhrase()
+            synthesizer.delegate = self
+        }
+        
+        func goToNextPhrase() {
+            phrase = words.randomElement() ?? "NULL"
+            let querry = phrase + " " + category
+            VisualizerHelper.shared.requestImagesFromGoogle(querry: querry, handler: self.handleImages)
+        }
+        
+        func playerInputDidChange(from oldValue: String, to newValue: String) {
+            if newValue.isEmpty {
+                playerInput = ""
+            } else if phrase.hasPrefix(newValue) {
+                
+                let diffInLength = newValue.count - oldValue.count
+                if diffInLength > 0 && diffInLength <= newValue.count {
+                    utter(String(newValue.suffix(diffInLength)))
+                    playerInput = newValue
+                }
+                
+            } else {
+                playerInput = oldValue
+                utter("неправильно")
+            }
+            
+        }
+        
+        func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+            if utterance.rate == 0.4 {
+                self.goToNextPhrase()
+            } else if phrase == playerInput {
+                playerInput = ""
+                let textToUtter = "молодец! Это читается – " + self.phrase + ". Давай дальше!"
+                self.utterSlowly(textToUtter)
+                // pronounce the word
+                // go to next phrase
+            }
+        }
+        
+        func utter(_ text: String) {
+            DispatchQueue.global(qos: .userInitiated).async {
+                let utterance = AVSpeechUtterance(string: text)
+                utterance.voice = AVSpeechSynthesisVoice(language: "ru")
+                utterance.rate = 0.5
+                self.synthesizer.speak(utterance)
+            }
+        }
+        
+        func utterSlowly(_ text: String) {
+            DispatchQueue.global(qos: .userInitiated).async {
+                let utterance = AVSpeechUtterance(string: text)
+                utterance.voice = AVSpeechSynthesisVoice(language: "ru")
+                utterance.rate = 0.4
+                
+                self.synthesizer.speak(utterance)
+            }
+        }
+        
+        func handleImages(response: GoogleResponse?, error: GenericError?) {
+            
+            if let error = error {
+                print(#function, "error getting the imageItems remotly -> \(error.type) \(error.description)")
+                return
+            }
+            
+            guard let response = response else {
+                print(#function, "imageItems are nil")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.imageUrls = response.items.map { $0.link }
+            }
+            
+        }
+        
     }
-
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7669F61284576FF00B2ED80 /* VisualisationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7669F60284576FF00B2ED80 /* VisualisationHelper.swift */; };
+		B7669F6328457EF800B2ED80 /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7669F6228457EF800B2ED80 /* Contents.swift */; };
 		B7D05969283A2BED00F3E59E /* marnieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D05968283A2BED00F3E59E /* marnieApp.swift */; };
 		B7D0596B283A2BED00F3E59E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0596A283A2BED00F3E59E /* ContentView.swift */; };
 		B7D0596D283A2BF100F3E59E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D0596C283A2BF100F3E59E /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7669F60284576FF00B2ED80 /* VisualisationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisationHelper.swift; sourceTree = "<group>"; };
+		B7669F6228457EF800B2ED80 /* Contents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contents.swift; sourceTree = "<group>"; };
 		B7D05965283A2BED00F3E59E /* marnie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marnie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D05968283A2BED00F3E59E /* marnieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marnieApp.swift; sourceTree = "<group>"; };
 		B7D0596A283A2BED00F3E59E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				B7D05968283A2BED00F3E59E /* marnieApp.swift */,
 				B7D0596A283A2BED00F3E59E /* ContentView.swift */,
+				B7669F60284576FF00B2ED80 /* VisualisationHelper.swift */,
+				B7669F6228457EF800B2ED80 /* Contents.swift */,
 				B7D0596C283A2BF100F3E59E /* Assets.xcassets */,
 				B7D0596E283A2BF100F3E59E /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7D0596B283A2BED00F3E59E /* ContentView.swift in Sources */,
+				B7669F61284576FF00B2ED80 /* VisualisationHelper.swift in Sources */,
 				B7D05969283A2BED00F3E59E /* marnieApp.swift in Sources */,
+				B7669F6328457EF800B2ED80 /* Contents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
