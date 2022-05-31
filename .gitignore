@@ -1,0 +1,8 @@
+.DS_Store
+Podfile.lock
+Pods/
+Quranize/.DS_Store
+Quranize/Assets.xcassets/.DS_Store
+Quranize/View/.DS_Store
+xcuserdata/
+xcshareddata/
