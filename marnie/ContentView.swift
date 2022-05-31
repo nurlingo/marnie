@@ -40,8 +40,6 @@ struct ContentView: View {
             TextField("", text: $playerInput)
                 .multilineTextAlignment(.center)
                 .font(Font.largeTitle)
-                .fontWeight(.bold)
-                .disableAutocorrection(true)
                 .textCase(.lowercase)
                 .autocapitalization(.none)
                 .focused($isFocused)
