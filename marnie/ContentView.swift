@@ -17,25 +17,6 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            Text(vm.phrase)
-                .font(.title)
-                .fontWeight(.bold)
-                .padding()
-                .onChange(of: vm.phrase) { _ in
-                    self.playerInput = ""
-                }
-            TextField("", text: $playerInput)
-                .multilineTextAlignment(.center)
-                .font(.title)
-                .disableAutocorrection(true)
-                .textCase(.lowercase)
-                .autocapitalization(.none)
-                .focused($isFocused)
-                .onChange(of: playerInput) { [playerInput] newValue in
-                    vm.playerInputDidChange(from: playerInput, to: newValue)
-                    self.playerInput = vm.playerInput
-                }
-            
             ScrollView(.horizontal) {
                 LazyHStack {
                     ForEach(vm.imageUrls, id: \.self) { imageUrl in
@@ -44,30 +25,36 @@ struct ContentView: View {
                         } placeholder: {
                             Color.gray
                         }
-                        .frame(width: 256, height: 256)
-                        .clipShape(RoundedRectangle(cornerRadius: 25))
+                        .frame(width: 160, height: 160)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
                     }
                 }
             }
-            
-            
-            
-            if !vm.gameIsOn {
-                Spacer()
-                Button(action: {
-                    vm.startNewGame()
-                    isFocused = true
-                }) {
-                    Text("New game")
-                        .padding()
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .background(.blue)
-                        .cornerRadius(15)
+            Text(vm.phrase)
+                .font(Font.largeTitle)
+                .fontWeight(.bold)
+                .padding()
+                .onChange(of: vm.phrase) { _ in
+                    self.playerInput = ""
                 }
-            }
-            
+            TextField("", text: $playerInput)
+                .multilineTextAlignment(.center)
+                .font(Font.largeTitle)
+                .fontWeight(.bold)
+                .disableAutocorrection(true)
+                .textCase(.lowercase)
+                .autocapitalization(.none)
+                .focused($isFocused)
+                .onChange(of: playerInput) { [playerInput] newValue in
+                    vm.playerInputDidChange(from: playerInput, to: newValue)
+                    self.playerInput = vm.playerInput
+                }
             Spacer()
+        }.onAppear {
+            vm.startNewGame()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) {
+                self.isFocused = true
+            }
         }
     }
 }
@@ -84,15 +71,21 @@ extension ContentView {
         
         var category = ""
         var words = [String]()
+        var locale = Locale.current.identifier
+        var encouragement = ""
         
         func startNewGame() {
             gameIsOn = true
             
             category = contentDictionary.keys.randomElement() ?? ""
+            
+            locale = localeDictionary[category] ?? ""
             words = contentDictionary[category] ?? []
+            encouragement = encouragementDictionary[locale] ?? ""
+            synthesizer.delegate = self
             
             goToNextPhrase()
-            synthesizer.delegate = self
+            
         }
         
         func goToNextPhrase() {
@@ -114,7 +107,6 @@ extension ContentView {
                 
             } else {
                 playerInput = oldValue
-                utter("неправильно")
             }
             
         }
@@ -124,7 +116,7 @@ extension ContentView {
                 self.goToNextPhrase()
             } else if phrase == playerInput {
                 playerInput = ""
-                let textToUtter = "молодец! Это читается – " + self.phrase + ". Давай дальше!"
+                let textToUtter = self.phrase
                 self.utterSlowly(textToUtter)
                 // pronounce the word
                 // go to next phrase
@@ -134,7 +126,7 @@ extension ContentView {
         func utter(_ text: String) {
             DispatchQueue.global(qos: .userInitiated).async {
                 let utterance = AVSpeechUtterance(string: text)
-                utterance.voice = AVSpeechSynthesisVoice(language: "ru")
+                utterance.voice = AVSpeechSynthesisVoice(language: self.locale)
                 utterance.rate = 0.5
                 self.synthesizer.speak(utterance)
             }
@@ -142,8 +134,8 @@ extension ContentView {
         
         func utterSlowly(_ text: String) {
             DispatchQueue.global(qos: .userInitiated).async {
-                let utterance = AVSpeechUtterance(string: text)
-                utterance.voice = AVSpeechSynthesisVoice(language: "ru")
+                let utterance = AVSpeechUtterance(string: self.encouragement + text + ".")
+                utterance.voice = AVSpeechSynthesisVoice(language: self.locale)
                 utterance.rate = 0.4
                 
                 self.synthesizer.speak(utterance)
@@ -163,7 +155,7 @@ extension ContentView {
             }
             
             DispatchQueue.main.async {
-                self.imageUrls = response.items.map { $0.link }
+                self.imageUrls = response.items.map{ $0.link }.shuffled()
             }
             
         }

@@ -8,10 +8,25 @@
 import Foundation
 
 let contentDictionary = [
-    "фрукт": fruits,
+    "фрукт": fruitRu,
+    "fruit": fruitEn,
+    "animal": animalEn,
+    "животное": animalRu,
 ]
 
-let fruits: [String] = [
+let localeDictionary = [
+    "фрукт": "ru",
+    "fruit": "en",
+    "animal": "en",
+    "животное": "ru",
+]
+
+let encouragementDictionary = [
+    "ru": "Молодец! Это действительно – ",
+    "en": "Well done! The word is – ",
+]
+
+let fruitRu: [String] = [
     "ананас",
     "абрикос",
     "апельсин",
@@ -30,7 +45,93 @@ let fruits: [String] = [
     "персик",
     "финик",
 ]
+let fruitEn: [String] = [
+    "apple",
+    "apricot",
+    "avocado",
+    "banana",
+    "bell pepper",
+    "blackberry",
+    "blueberry",
+    "cherry",
+    "chili pepper",
+    "coconut",
+    "cranberry",
+    "cucumber",
+    "date",
+    "dragonfruit",
+    "eggplant",
+    "fig",
+    "gooseberry",
+    "grape",
+    "grapefruit",
+    "guava",
+    "kiwi fruit",
+    "lemon",
+    "lime",
+    "mandarine",
+    "mango",
+    "nectarine",
+    "nut",
+    "olive",
+    "orange",
+    "papaya",
+    "peach",
+    "pear",
+    "pineapple",
+    "plum",
+    "pomegranate",
+    "raisin",
+    "raspberry",
+    "melon",
+    "strawberry",
+    "tangerine",
+    "tomato",
+    "watermelon"
+]
 
+let animalEn = [
+    "ant",
+    "bird",
+    "cat",
+    "chicken",
+    "cow",
+    "dog",
+    "elephant",
+    "fish",
+    "fox",
+    "horse",
+    "kangaroo",
+    "lion",
+    "monkey",
+    "penguin",
+    "goat",
+    "rabbit",
+    "sheep",
+    "tiger",
+    "whale",
+    "wolf",
+]
 
-
-
+let animalRu = [
+    "муравей",
+         "ворона",
+         "кошка",
+         "курица",
+         "корова",
+         "собака",
+         "слон",
+         "рыба",
+         "лиса",
+         "лошадь",
+         "кенгуру",
+         "лев",
+         "обезьяна",
+         "пингвин",
+         "коза",
+         "кролик",
+         "овца",
+         "тигр",
+         "кит",
+         "волк",
+]

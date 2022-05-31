@@ -42,7 +42,7 @@ class VisualizerHelper: NSObject {
     
     func requestImagesFromGoogle(querry: String, handler: @escaping ImageItemHandler ) {
         
-        let apiKey = "AIzaSyCvE3uKIcCwAfJzJ-268weZvVWjF5f_fyU"
+        let apiKey = "AIzaSyCHhq7RE9P-nFy-O_b_LwYZOZLnZdWn8XU"
         let searchEngineId = "017099167182805412267:f-ibulgyu30"
         let serverAddress = String(format: "https://www.googleapis.com/customsearch/v1?q=%@&cx=%@&key=%@&searchType=image&safe=active&imgSize=xlarge",querry ,searchEngineId, apiKey)
         
