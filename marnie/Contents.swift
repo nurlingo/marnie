@@ -21,9 +21,19 @@ let localeDictionary = [
     "животное": "ru",
 ]
 
+let greetingDictionary = [
+    "ru": ["Ассаляму аляйкум, Дамелии и Адиля! Давайте учиться читать!"],
+    "en": ["Salaam 'alaikum, Marnu and Duda! Let's learn to read!"]
+]
+
+let farewellDictionary = [
+    "ru": ["Дамелии и Адиля, вы молодцы! Теперь нужно отдохнуть! ассаляяму аляйкум!"],
+    "en": ["Marnyu and Duda, mashaa Allah you did well! Now it's time to rest. As-salaamu 'alaikum!"]
+]
+
 let encouragementDictionary = [
-    "ru": "Молодец! Это действительно – ",
-    "en": "Well done! The word is – ",
+    "ru": ["Молодец!", "Отлично!", "Правильно!", "Машаа Аллах!"],
+    "en": ["Well done!", "Amazing!", "Very cool!"]
 ]
 
 let fruitRu: [String] = [

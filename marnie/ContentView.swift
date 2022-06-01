@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            ScrollView(.horizontal) {
+            ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack {
                     ForEach(vm.imageUrls, id: \.self) { imageUrl in
                         AsyncImage(url: URL(string: imageUrl)) { image in
@@ -25,7 +25,7 @@ struct ContentView: View {
                         } placeholder: {
                             Color.gray
                         }
-                        .frame(width: 160, height: 160)
+                        .frame(width: 250, height: 250)
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                     }
                 }
@@ -70,7 +70,9 @@ extension ContentView {
         var category = ""
         var words = [String]()
         var locale = Locale.current.identifier
-        var encouragement = ""
+        var encouragement: String {
+            encouragementDictionary[locale]?.randomElement() ?? ""
+        }
         
         func startNewGame() {
             gameIsOn = true
@@ -78,18 +80,30 @@ extension ContentView {
             category = contentDictionary.keys.randomElement() ?? ""
             
             locale = localeDictionary[category] ?? ""
-            words = contentDictionary[category] ?? []
-            encouragement = encouragementDictionary[locale] ?? ""
+            words = contentDictionary[category]?.shuffled() ?? []
             synthesizer.delegate = self
             
-            goToNextPhrase()
+            let greeting = greetingDictionary[locale]?.randomElement() ?? ""
             
+            utterSlowly(greeting)
+                        
         }
         
         func goToNextPhrase() {
-            phrase = words.randomElement() ?? "NULL"
-            let querry = phrase + " " + category
-            VisualizerHelper.shared.requestImagesFromGoogle(querry: querry, handler: self.handleImages)
+            
+            if words.count > 0 {
+                phrase = words.removeLast()
+                let querry = phrase + " " + category
+                VisualizerHelper.shared.requestImagesFromGoogle(querry: querry, handler: self.handleImages)
+            } else {
+                let farewell = farewellDictionary[locale]?.randomElement() ?? ""
+                utterSlowly(farewell)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                    fatalError()
+                }
+            }
+            
+            
         }
         
         func playerInputDidChange(from oldValue: String, to newValue: String) {
@@ -115,7 +129,7 @@ extension ContentView {
             } else if phrase == playerInput {
                 playerInput = ""
                 let textToUtter = self.phrase
-                self.utterSlowly(textToUtter)
+                self.utterSlowly(textToUtter, addition: self.encouragement)
                 // pronounce the word
                 // go to next phrase
             }
@@ -130,9 +144,9 @@ extension ContentView {
             }
         }
         
-        func utterSlowly(_ text: String) {
+        func utterSlowly(_ text: String, addition: String = "") {
             DispatchQueue.global(qos: .userInitiated).async {
-                let utterance = AVSpeechUtterance(string: self.encouragement + text + ".")
+                let utterance = AVSpeechUtterance(string: text + ". " + addition)
                 utterance.voice = AVSpeechSynthesisVoice(language: self.locale)
                 utterance.rate = 0.4
                 
