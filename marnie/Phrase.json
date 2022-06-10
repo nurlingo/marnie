@@ -1,0 +1,32 @@
+{
+    "encouragement": [
+        {
+            "ru": "Молодец!",
+            "en": "Well done!"
+        },
+        {
+            "ru": "Отлично!",
+            "en": "Amazing!"
+        },
+        {
+            "ru": "Правильно!",
+            "en": "Correct!"
+        },
+        {
+            "ru": "Замечательно!",
+            "en": "Very cool!"
+        }
+    ],
+    "farewell": [
+        {
+            "ru": "Дамелии и Адиля, вы молодцы! Теперь нужно отдохнуть! ассаляяму аляйкум!",
+            "en": "Marnu and Duda, you did well! Now it's time to rest. As-salaamu 'alaikum!"
+        }
+    ],
+    "greeting": [
+        {
+            "ru": "Ассаляму аляйкум, Дамелии и Адиля! Давайте учиться читать!",
+            "en": "Salaam 'alaikum, Marnu and Duda! Let's learn to read!"
+        }
+    ]
+}

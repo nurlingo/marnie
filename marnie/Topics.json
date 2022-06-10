@@ -1,0 +1,32 @@
+[
+    {
+        "id": "family",
+        "en": "Family",
+        "ru": "Семья"
+    },
+    {
+        "id": "clothes",
+        "en": "Clothes",
+        "ru": "Одежда"
+    },
+    {
+        "id": "bathroom",
+        "en": "Bathroom",
+        "ru": "Гигиена"
+    },
+    {
+        "id": "body",
+        "en": "Body parts",
+        "ru": "Части тела"
+    },
+    {
+        "id": "animal",
+        "en": "Animals",
+        "ru": "Животные"
+    },
+    {
+        "id": "fruit",
+        "en": "Fruit",
+        "ru": "Фрукты"
+    }
+]

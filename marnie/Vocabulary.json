@@ -1,0 +1,563 @@
+{
+    "family": [
+        {
+            "en": "family",
+            "definition": "Parents and children.",
+            "ru": "семья"
+        },
+        {
+            "en": "home",
+            "definition": "The place you live in with your family.",
+            "ru": "дом"
+        },
+        {
+            "en": "grandpa",
+            "definition": "The father of your mom or dad.",
+            "ru": "дедушка"
+        },
+        {
+            "en": "grandma",
+            "definition": "The mother of your mom or dad.",
+            "ru": "бабушка"
+        },
+        {
+            "en": "dad",
+            "definition": "Your daddy is your male parent.",
+            "ru": "папа"
+        },
+        {
+            "en": "mom",
+            "definition": "Your female parent.",
+            "ru": "мама"
+        },
+        {
+            "en": "parents",
+            "definition": "Mother and father.",
+            "ru": "родители"
+        },
+        {
+            "en": "brother",
+            "definition": "A male with the same parents as someone else.",
+            "ru": "брат"
+        },
+        {
+            "en": "sister",
+            "definition": "A female who has the same parents as another person.",
+            "ru": "сестра"
+        },
+        {
+            "en": "uncle",
+            "definition": "The brother of your mother or father, or the husband of your aunt.",
+            "ru": "дядя"
+        },
+        {
+            "en": "aunt",
+            "definition": "The sister of your mother or father, or the wife of your uncle.",
+            "ru": "тетя"
+        },
+        {
+            "en": "baby",
+            "definition": "A very young child.",
+            "ru": "младенец"
+        }
+    ],
+    "clothes": [
+        {
+            "en": "blouse",
+            "definition": "A shirt for women and girls.",
+            "ru": "блузка"
+        },
+        {
+            "en": "cap",
+            "definition": "We wear it to keep our heads warm.",
+            "ru": "кепка"
+        },
+        {
+            "en": "coat",
+            "definition": "We wear it on top of our clothes to keep us warm.",
+            "ru": "пальто"
+        },
+        {
+            "en": "dress",
+            "definition": "For women and girls, consists of bodice and skirt in one piece.",
+            "ru": "платье"
+        },
+        {
+            "en": "jacket",
+            "definition": "A short coat with long sleeves.",
+            "ru": "куртка"
+        },
+        {
+            "en": "scarf",
+            "definition": "You wear it round your neck to keep yourself warm.",
+            "ru": "шарф"
+        },
+        {
+            "en": "shirt",
+            "definition": "A garment with sleeves, a collar and a front opening.",
+            "ru": "рубашка"
+        },
+        {
+            "en": "shoes",
+            "definition": "You wear them on your feet when you go outside.",
+            "ru": "обувь"
+        },
+        {
+            "en": "skirt",
+            "definition": "Like a dress, but with no top part.",
+            "ru": "юбка"
+        },
+        {
+            "en": "socks",
+            "definition": "We wear them on our feet under shoes.",
+            "ru": "носки"
+        },
+        {
+            "en": "sweater",
+            "definition": "Something to keep you warm on a cold day.",
+            "ru": "свитер"
+        },
+        {
+            "en": "trousers",
+            "definition": "They cover both legs separatelly.",
+            "ru": "брюки"
+        }
+    ],
+    "bathroom": [
+        {
+            "en": "bath",
+            "definition": "You fill it with water and use to wash the body.",
+            "ru": "ванна"
+        },
+        {
+            "en": "brush",
+            "definition": "A device used to brush and tidy hair.",
+            "ru": "щетка"
+        },
+        {
+            "en": "comb",
+            "definition": "A flat device with narrow pointed teeth.",
+            "ru": "гребень"
+        },
+        {
+            "en": "mirror",
+            "definition": "When you look at it you can see yourself reflected in it.",
+            "ru": "зеркало"
+        },
+        {
+            "en": "shampoo",
+            "definition": "A liquid soap used to wash hair.",
+            "ru": "шампунь"
+        },
+        {
+            "en": "shower",
+            "definition": "Sprays water over you.",
+            "ru": "душ"
+        },
+        {
+            "en": "sink",
+            "definition": "A basin for washing your hands and face.",
+            "ru": "раковина"
+        },
+        {
+            "en": "soap",
+            "definition": "Made from the salts of vegetable or animal fats.",
+            "ru": "мыло"
+        },
+        {
+            "en": "sponge",
+            "definition": "An absorbent object used for cleaning or washing.",
+            "ru": "губка"
+        },
+        {
+            "en": "toothbrush",
+            "definition": "A brush used to clean the teeth.",
+            "ru": "зубная щетка"
+        },
+        {
+            "en": "toothpaste",
+            "definition": "A paste used to clean your teeth.",
+            "ru": "зубная паста"
+        },
+        {
+            "en": "towel",
+            "definition": "A cloth for drying or wiping.",
+            "ru": "полотенце"
+        }
+    ],
+    "body": [
+        {
+            "en": "body",
+            "definition": "The entire structure of an organism.",
+            "ru": "тело"
+        },
+        {
+            "en": "ear",
+            "definition": "The part of the body that senses sound.",
+            "ru": "ухо"
+        },
+        {
+            "en": "eye",
+            "definition": "The part of the body that gives us sight.",
+            "ru": "глаз"
+        },
+        {
+            "en": "feet",
+            "definition": "Have toes and help us walk, run or dance.",
+            "ru": "ноги"
+        },
+        {
+            "en": "hair",
+            "definition": "The long strands that grow on the top of our head.",
+            "ru": "волосы"
+        },
+        {
+            "en": "hand",
+            "definition": "Has four fingers and a thumb.",
+            "ru": "рука"
+        },
+        {
+            "en": "head",
+            "definition": "Contains the face.",
+            "ru": "глава"
+        },
+        {
+            "en": "legs",
+            "definition": "We walk on these.",
+            "ru": "ноги"
+        },
+        {
+            "en": "mouth",
+            "definition": "Used to eat and talk.",
+            "ru": "рот"
+        },
+        {
+            "en": "neck",
+            "definition": "Between your head and your shoulders.",
+            "ru": "шея"
+        },
+        {
+            "en": "nose",
+            "definition": "We sense smells with this part of the body.",
+            "ru": "нос"
+        },
+        {
+            "en": "tooth",
+            "definition": "One of the hard, white things in your mouth.",
+            "ru": "зуб"
+        }
+    ],
+    "animal": [
+        {
+            "en": "ant",
+            "definition": "",
+            "ru": "муравей"
+        },
+        {
+            "en": "bird",
+            "definition": "",
+            "ru": "птица"
+        },
+        {
+            "en": "crow",
+            "definition": "",
+            "ru": "ворона"
+        },
+        {
+            "en": "cat",
+            "definition": "",
+            "ru": "кошка"
+        },
+        {
+            "en": "chicken",
+            "definition": "",
+            "ru": "курица"
+        },
+        {
+            "en": "cow",
+            "definition": "",
+            "ru": "корова"
+        },
+        {
+            "en": "dog",
+            "definition": "",
+            "ru": "собака"
+        },
+        {
+            "en": "elephant",
+            "definition": "",
+            "ru": "слон"
+        },
+        {
+            "en": "fish",
+            "definition": "",
+            "ru": "рыба"
+        },
+        {
+            "en": "fox",
+            "definition": "",
+            "ru": "лиса"
+        },
+        {
+            "en": "horse",
+            "definition": "",
+            "ru": "лошадь"
+        },
+        {
+            "en": "kangaroo",
+            "definition": "",
+            "ru": "кенгуру"
+        },
+        {
+            "en": "lion",
+            "definition": "",
+            "ru": "лев"
+        },
+        {
+            "en": "monkey",
+            "definition": "",
+            "ru": "обезьяна"
+        },
+        {
+            "en": "penguin",
+            "definition": "",
+            "ru": "пингвин"
+        },
+        {
+            "en": "goat",
+            "definition": "",
+            "ru": "коза"
+        },
+        {
+            "en": "rabbit",
+            "definition": "",
+            "ru": "кролик"
+        },
+        {
+            "en": "sheep",
+            "definition": "",
+            "ru": "овца"
+        },
+        {
+            "en": "tiger",
+            "definition": "",
+            "ru": "тигр"
+        },
+        {
+            "en": "whale",
+            "definition": "",
+            "ru": "кит"
+        },
+        {
+            "en": "wolf",
+            "definition": "",
+            "ru": "волк"
+        }
+    ],
+    "fruit": [
+        {
+            "en": "apple",
+            "definition": "",
+            "ru": "яблоко"
+        },
+        {
+            "en": "apricot",
+            "definition": "",
+            "ru": "абрикос"
+        },
+        {
+            "en": "avocado",
+            "definition": "",
+            "ru": "авокадо"
+        },
+        {
+            "en": "banana",
+            "definition": "",
+            "ru": "банан"
+        },
+        {
+            "en": "bell pepper",
+            "definition": "",
+            "ru": "болгарский перец"
+        },
+        {
+            "en": "blackberry",
+            "definition": "",
+            "ru": "ежевика"
+        },
+        {
+            "en": "blueberry",
+            "definition": "",
+            "ru": "черника"
+        },
+        {
+            "en": "cherry",
+            "definition": "",
+            "ru": "вишня"
+        },
+        {
+            "en": "chili pepper",
+            "definition": "",
+            "ru": "перец чили"
+        },
+        {
+            "en": "coconut",
+            "definition": "",
+            "ru": "кокос"
+        },
+        {
+            "en": "cranberry",
+            "definition": "",
+            "ru": "клюква"
+        },
+        {
+            "en": "cucumber",
+            "definition": "",
+            "ru": "огурец"
+        },
+        {
+            "en": "date",
+            "definition": "",
+            "ru": "финик"
+        },
+        {
+            "en": "eggplant",
+            "definition": "",
+            "ru": "баклажан"
+        },
+        {
+            "en": "fig",
+            "definition": "",
+            "ru": "инжир"
+        },
+        {
+            "en": "gooseberry",
+            "definition": "",
+            "ru": "крыжовник"
+        },
+        {
+            "en": "grape",
+            "definition": "",
+            "ru": "виноград"
+        },
+        {
+            "en": "grapefruit",
+            "definition": "",
+            "ru": "грейпфрут"
+        },
+        {
+            "en": "guava",
+            "definition": "",
+            "ru": "гуава"
+        },
+        {
+            "en": "kiwi fruit",
+            "definition": "",
+            "ru": "киви"
+        },
+        {
+            "en": "lemon",
+            "definition": "",
+            "ru": "лимон"
+        },
+        {
+            "en": "lime",
+            "definition": "",
+            "ru": "лайм"
+        },
+        {
+            "en": "mandarine",
+            "definition": "",
+            "ru": "мандарин"
+        },
+        {
+            "en": "mango",
+            "definition": "",
+            "ru": "манго"
+        },
+        {
+            "en": "melon",
+            "definition": "",
+            "ru": "дыня"
+        },
+        {
+            "en": "nectarine",
+            "definition": "",
+            "ru": "нектарин"
+        },
+        {
+            "en": "nut",
+            "definition": "",
+            "ru": "орех"
+        },
+        {
+            "en": "olive",
+            "definition": "",
+            "ru": "оливковое"
+        },
+        {
+            "en": "orange",
+            "definition": "",
+            "ru": "апельсин"
+        },
+        {
+            "en": "papaya",
+            "definition": "",
+            "ru": "папайя"
+        },
+        {
+            "en": "peach",
+            "definition": "",
+            "ru": "персик"
+        },
+        {
+            "en": "pear",
+            "definition": "",
+            "ru": "груша"
+        },
+        {
+            "en": "pineapple",
+            "definition": "",
+            "ru": "ананас"
+        },
+        {
+            "en": "plum",
+            "definition": "",
+            "ru": "слива"
+        },
+        {
+            "en": "pomegranate",
+            "definition": "",
+            "ru": "гранат"
+        },
+        {
+            "en": "raisin",
+            "definition": "",
+            "ru": "изюм"
+        },
+        {
+            "en": "raspberry",
+            "ru": "малина"
+        },
+        {
+            "en": "strawberry",
+            "definition": "",
+            "ru": "клубника"
+        },
+        {
+            "en": "tangerine",
+            "definition": "",
+            "ru": "мандарин"
+        },
+        {
+            "en": "tomato",
+            "definition": "",
+            "ru": "помидор"
+        },
+        {
+            "en": "watermelon",
+            "definition": "",
+            "ru": "арбуз"
+        }
+    ]
+}
