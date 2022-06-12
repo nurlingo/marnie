@@ -9,7 +9,7 @@ import Foundation
 
 class VocabularyService {
     
-    var vocabularyDictionary: [String:[Vocabulary]]
+    var topicVocabulary: [Vocabulary]
     
     var locale: String
     var topic: Topic
@@ -19,7 +19,8 @@ class VocabularyService {
         self.locale = locale
         self.topic = topic
         
-        vocabularyDictionary = Bundle.main.decode([String:[Vocabulary]].self, from: "Vocabulary.json")
+        let allTopics = Bundle.main.decode([String:[Vocabulary]].self, from: "Vocabulary.json")
+        topicVocabulary = allTopics[topic.id]?.filter({ !$0.emoji.isEmpty }).shuffled() ?? []
     }
     
     var topicTitle: String {
@@ -27,17 +28,11 @@ class VocabularyService {
     }
     
     var words: [String] {
-        if let words = vocabularyDictionary[topic.id]?.filter({!$0.emoji.isEmpty}) {
-            return locale == "ru" ? words.map({$0.ru}) : words.map({$0.en})
-        }
-        return []
+        locale == "ru" ? topicVocabulary.map({$0.ru}) : topicVocabulary.map({$0.en})
     }
     
     var emojis: [String] {
-        if let words = vocabularyDictionary[topic.id]?.filter({!$0.emoji.isEmpty}) {
-            return words.map({$0.emoji})
-        }
-        return []
+        topicVocabulary.map({$0.emoji})
     }
 }
     
