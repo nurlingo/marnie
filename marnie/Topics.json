@@ -10,6 +10,11 @@
         "ru": "Одежда"
     },
     {
+        "id": "shoes",
+        "en": "Shoes",
+        "ru": "Обувь"
+    },
+    {
         "id": "bathroom",
         "en": "Bathroom",
         "ru": "Гигиена"
@@ -20,13 +25,43 @@
         "ru": "Части тела"
     },
     {
-        "id": "animal",
+        "id": "domestic",
         "en": "Animals",
         "ru": "Животные"
+    },
+    {
+        "id": "wild",
+        "en": "Wild animals",
+        "ru": "Дикие животные"
+    },
+    {
+        "id": "exotic",
+        "en": "Exotic animals",
+        "ru": "Экзотические животные"
+    },
+    {
+        "id": "bird",
+        "en": "Birds",
+        "ru": "Птицы"
+    },
+    {
+        "id": "sea",
+        "en": "Sea animals",
+        "ru": "Морские животные"
+    },
+    {
+        "id": "insect",
+        "en": "Insects",
+        "ru": "Насекомые"
     },
     {
         "id": "fruit",
         "en": "Fruit",
         "ru": "Фрукты"
+    },
+    {
+        "id": "vegetable",
+        "en": "Vegetables",
+        "ru": "Овощи"
     }
 ]

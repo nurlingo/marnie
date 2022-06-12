@@ -23,10 +23,16 @@
             "en": "Marnu and Duda, you did well! Now it's time to rest. As-salaamu 'alaikum!"
         }
     ],
+    "lessonStarted": [
+        {
+            "ru": "Вы выбрали тему",
+            "en": "You chose the topic of"
+        }
+    ],
     "greeting": [
         {
-            "ru": "Ассаляму аляйкум, Дамелии и Адиля! Давайте учиться читать!",
-            "en": "Salaam 'alaikum, Marnu and Duda! Let's learn to read!"
+            "ru": "Ассаляму аляйкум, Дамелии и Адиля! Давайте учиться читать! Выберите тему!",
+            "en": "Salaam 'alaikum, Marnu and Duda! Let's learn to read! Choose a topic!"
         }
     ]
 }

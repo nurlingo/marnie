@@ -1,563 +1,1224 @@
 {
     "family": [
         {
+            "emoji": "👨‍👩‍👧‍👦",
             "en": "family",
-            "definition": "Parents and children.",
+            "definition_en": "Parents and children.",
             "ru": "семья"
         },
         {
+            "emoji": "🏡",
             "en": "home",
-            "definition": "The place you live in with your family.",
+            "definition_en": "The place you live in with your family.",
             "ru": "дом"
         },
         {
+            "emoji": "👴🏼",
             "en": "grandpa",
-            "definition": "The father of your mom or dad.",
+            "definition_en": "The father of your mom or dad.",
             "ru": "дедушка"
         },
         {
+            "emoji": "👵🏼",
             "en": "grandma",
-            "definition": "The mother of your mom or dad.",
+            "definition_en": "The mother of your mom or dad.",
             "ru": "бабушка"
         },
         {
+            "emoji": "🧔🏻‍♂️",
             "en": "dad",
-            "definition": "Your daddy is your male parent.",
+            "definition_en": "Your daddy is your male parent.",
             "ru": "папа"
         },
         {
+            "emoji": "🧕🏼",
             "en": "mom",
-            "definition": "Your female parent.",
+            "definition_en": "Your female parent.",
             "ru": "мама"
         },
         {
+            "emoji": "🧔🏻‍♂️🧕🏼",
             "en": "parents",
-            "definition": "Mother and father.",
+            "definition_en": "Mother and father.",
             "ru": "родители"
         },
         {
+            "emoji": "👦🏻",
             "en": "brother",
-            "definition": "A male with the same parents as someone else.",
+            "definition_en": "A male with the same parents as someone else.",
             "ru": "брат"
         },
         {
+            "emoji": "👧🏻",
             "en": "sister",
-            "definition": "A female who has the same parents as another person.",
+            "definition_en": "A female who has the same parents as another person.",
             "ru": "сестра"
         },
         {
+            "emoji": "🙋🏻‍♂️",
             "en": "uncle",
-            "definition": "The brother of your mother or father, or the husband of your aunt.",
+            "definition_en": "The brother of your mother or father, or the husband of your aunt.",
             "ru": "дядя"
         },
         {
+            "emoji": "🙋🏻‍♀️",
             "en": "aunt",
-            "definition": "The sister of your mother or father, or the wife of your uncle.",
+            "definition_en": "The sister of your mother or father, or the wife of your uncle.",
             "ru": "тетя"
         },
         {
+            "emoji": "👶🏻",
             "en": "baby",
-            "definition": "A very young child.",
+            "definition_en": "A very young child.",
             "ru": "младенец"
         }
     ],
     "clothes": [
         {
-            "en": "blouse",
-            "definition": "A shirt for women and girls.",
-            "ru": "блузка"
+            "emoji": "👕👚",
+            "en": "t-shirt",
+            "definition_en": "A shirt with short sleeves",
+            "ru": "футболка"
         },
         {
+            "emoji": "🧢",
             "en": "cap",
-            "definition": "We wear it to keep our heads warm.",
+            "definition_en": "We wear it to keep our heads warm.",
             "ru": "кепка"
         },
         {
+            "emoji": "🧥",
             "en": "coat",
-            "definition": "We wear it on top of our clothes to keep us warm.",
+            "definition_en": "We wear it on top of our clothes to keep us warm.",
             "ru": "пальто"
         },
         {
+            "emoji": "👗👘",
             "en": "dress",
-            "definition": "For women and girls, consists of bodice and skirt in one piece.",
+            "definition_en": "For women and girls, consists of bodice and skirt in one piece.",
             "ru": "платье"
         },
         {
+            "emoji": "🦺",
             "en": "jacket",
-            "definition": "A short coat with long sleeves.",
+            "definition_en": "A short coat with long sleeves.",
             "ru": "куртка"
         },
         {
+            "emoji": "🧣",
             "en": "scarf",
-            "definition": "You wear it round your neck to keep yourself warm.",
+            "definition_en": "You wear it round your neck to keep yourself warm.",
             "ru": "шарф"
         },
         {
-            "en": "shirt",
-            "definition": "A garment with sleeves, a collar and a front opening.",
-            "ru": "рубашка"
+            "emoji": "🧤",
+            "en": "gloves",
+            "definition_en": "",
+            "ru": "перчатки"
         },
         {
-            "en": "shoes",
-            "definition": "You wear them on your feet when you go outside.",
-            "ru": "обувь"
-        },
-        {
-            "en": "skirt",
-            "definition": "Like a dress, but with no top part.",
-            "ru": "юбка"
-        },
-        {
+            "emoji": "🧦",
             "en": "socks",
-            "definition": "We wear them on our feet under shoes.",
+            "definition_en": "We wear them on our feet under shoes.",
             "ru": "носки"
         },
         {
+            "emoji": "👖",
+            "en": "jeans",
+            "definition_en": "",
+            "ru": "джинсы"
+        },
+        {
+            "emoji": "👔",
+            "en": "shirt",
+            "definition_en": "A garment with sleeves, a collar and a front opening.",
+            "ru": "рубашка"
+        },
+        {
+            "emoji": "🩳",
+            "en": "boxers",
+            "definition_en": "",
+            "ru": "шорты"
+        },
+        {
+            "emoji": "🩲",
+            "en": "pants",
+            "definition_en": "",
+            "ru": "трусы"
+        },
+        {
+            "emoji": "",
             "en": "sweater",
-            "definition": "Something to keep you warm on a cold day.",
+            "definition_en": "Something to keep you warm on a cold day.",
             "ru": "свитер"
         },
         {
+            "emoji": "",
             "en": "trousers",
-            "definition": "They cover both legs separatelly.",
+            "definition_en": "They cover both legs separatelly.",
             "ru": "брюки"
+        }
+    ],
+    "shoes": [
+        {
+            "emoji": "👞👞",
+            "en": "shoes",
+            "definition_en": "You wear them on your feet when you go outside.",
+            "ru": "туфли"
+        },
+        {
+            "emoji": "🥿🥿",
+            "en": "flat shoes",
+            "definition_en": "",
+            "ru": ""
+        },
+        {
+            "emoji": "👠👠",
+            "en": "heeled shoes",
+            "definition_en": "",
+            "ru": ""
+        },
+        {
+            "emoji": "👡👡",
+            "en": "heeled sandals",
+            "definition_en": "",
+            "ru": ""
+        },
+        {
+            "emoji": "👟",
+            "en": "snickers",
+            "definition_en": "",
+            "ru": "кросовки"
+        },
+        {
+            "emoji": "🥾👢",
+            "en": "boots",
+            "definition_en": "",
+            "ru": "сапоги"
+        },
+        {
+            "emoji": "⛸",
+            "en": "skates",
+            "definition_en": "",
+            "ru": "коньки"
+        },
+        {
+            "emoji": "🛼",
+            "en": "rollers",
+            "definition_en": "",
+            "ru": "ролики"
+        },
+        {
+            "emoji": "🩴",
+            "en": "slippers",
+            "definition_en": "",
+            "ru": "шлепки"
         }
     ],
     "bathroom": [
         {
+            "emoji": "🛀🏻",
             "en": "bath",
-            "definition": "You fill it with water and use to wash the body.",
+            "definition_en": "You fill it with water and use to wash the body.",
             "ru": "ванна"
         },
         {
+            "emoji": "",
             "en": "brush",
-            "definition": "A device used to brush and tidy hair.",
+            "definition_en": "A device used to brush and tidy hair.",
             "ru": "щетка"
         },
         {
+            "emoji": "",
             "en": "comb",
-            "definition": "A flat device with narrow pointed teeth.",
+            "definition_en": "A flat device with narrow pointed teeth.",
             "ru": "гребень"
         },
         {
+            "emoji": "🪞",
             "en": "mirror",
-            "definition": "When you look at it you can see yourself reflected in it.",
+            "definition_en": "When you look at it you can see yourself reflected in it.",
             "ru": "зеркало"
         },
         {
+            "emoji": "🧴💆🏻‍♂️",
             "en": "shampoo",
-            "definition": "A liquid soap used to wash hair.",
+            "definition_en": "A liquid soap used to wash hair.",
             "ru": "шампунь"
         },
         {
+            "emoji": "🚿",
             "en": "shower",
-            "definition": "Sprays water over you.",
+            "definition_en": "Sprays water over you.",
             "ru": "душ"
         },
         {
+            "emoji": "",
             "en": "sink",
-            "definition": "A basin for washing your hands and face.",
+            "definition_en": "A basin for washing your hands and face.",
             "ru": "раковина"
         },
         {
+            "emoji": "🚰",
+            "en": "tap",
+            "definition_en": "",
+            "ru": "кран"
+        },
+        {
+            "emoji": "🧼",
             "en": "soap",
-            "definition": "Made from the salts of vegetable or animal fats.",
+            "definition_en": "Made from the salts of vegetable or animal fats.",
             "ru": "мыло"
         },
         {
+            "emoji": "🧽",
             "en": "sponge",
-            "definition": "An absorbent object used for cleaning or washing.",
+            "definition_en": "An absorbent object used for cleaning or washing.",
             "ru": "губка"
         },
         {
+            "emoji": "🪥",
             "en": "toothbrush",
-            "definition": "A brush used to clean the teeth.",
+            "definition_en": "A brush used to clean the teeth.",
             "ru": "зубная щетка"
         },
         {
+            "emoji": "",
             "en": "toothpaste",
-            "definition": "A paste used to clean your teeth.",
+            "definition_en": "A paste used to clean your teeth.",
             "ru": "зубная паста"
         },
         {
+            "emoji": "",
             "en": "towel",
-            "definition": "A cloth for drying or wiping.",
+            "definition_en": "A cloth for drying or wiping.",
             "ru": "полотенце"
         }
     ],
     "body": [
         {
+            "emoji": "",
             "en": "body",
-            "definition": "The entire structure of an organism.",
+            "definition_en": "The entire structure of an organism.",
             "ru": "тело"
         },
         {
+            "emoji": "🦻🏻",
             "en": "ear",
-            "definition": "The part of the body that senses sound.",
+            "definition_en": "The part of the body that senses sound.",
             "ru": "ухо"
         },
         {
+            "emoji": "👁",
             "en": "eye",
-            "definition": "The part of the body that gives us sight.",
+            "definition_en": "The part of the body that gives us sight.",
             "ru": "глаз"
         },
         {
+            "emoji": "🦶🏻🦶🏻",
             "en": "feet",
-            "definition": "Have toes and help us walk, run or dance.",
+            "definition_en": "Have toes and help us walk, run or dance.",
             "ru": "ноги"
         },
         {
+            "emoji": "👅",
+            "en": "tongue",
+            "definition_en": "",
+            "ru": ""
+        },
+        {
+            "emoji": "🧠",
+            "en": "brain",
+            "definition_en": "",
+            "ru": ""
+        },
+        {
+            "emoji": "🫀",
+            "en": "heart",
+            "definition_en": "",
+            "ru": ""
+        },
+        {
+            "emoji": "",
             "en": "hair",
-            "definition": "The long strands that grow on the top of our head.",
+            "definition_en": "The long strands that grow on the top of our head.",
             "ru": "волосы"
         },
         {
+            "emoji": "💀",
+            "en": "skull",
+            "definition_en": "",
+            "ru": ""
+        },
+        {
+            "emoji": "👍",
+            "en": "thumb",
+            "definition_en": "",
+            "ru": ""
+        },
+        {
+            "emoji": "👈🏻",
+            "en": "index finger",
+            "definition_en": "",
+            "ru": ""
+        },
+        {
+            "emoji": "👊",
+            "en": "fist",
+            "definition_en": "",
+            "ru": ""
+        },
+        {
+            "emoji": "💪",
+            "en": "arm",
+            "definition_en": "",
+            "ru": ""
+        },
+        {
+            "emoji": "🤚🏻",
             "en": "hand",
-            "definition": "Has four fingers and a thumb.",
+            "definition_en": "Has four fingers and a thumb.",
             "ru": "рука"
         },
         {
+            "emoji": "👤",
             "en": "head",
-            "definition": "Contains the face.",
+            "definition_en": "Contains the face.",
             "ru": "глава"
         },
         {
+            "emoji": "🦵🏻🦵🏻",
             "en": "legs",
-            "definition": "We walk on these.",
+            "definition_en": "We walk on these.",
             "ru": "ноги"
         },
         {
+            "emoji": "👄",
             "en": "mouth",
-            "definition": "Used to eat and talk.",
+            "definition_en": "Used to eat and talk.",
             "ru": "рот"
         },
         {
+            "emoji": "",
             "en": "neck",
-            "definition": "Between your head and your shoulders.",
+            "definition_en": "Between your head and your shoulders.",
             "ru": "шея"
         },
         {
+            "emoji": "👃🏻",
             "en": "nose",
-            "definition": "We sense smells with this part of the body.",
+            "definition_en": "We sense smells with this part of the body.",
             "ru": "нос"
         },
         {
+            "emoji": "🦷",
             "en": "tooth",
-            "definition": "One of the hard, white things in your mouth.",
+            "definition_en": "One of the hard, white things in your mouth.",
             "ru": "зуб"
         }
     ],
-    "animal": [
+    "domestic": [
         {
-            "en": "ant",
-            "definition": "",
-            "ru": "муравей"
-        },
-        {
-            "en": "bird",
-            "definition": "",
-            "ru": "птица"
-        },
-        {
-            "en": "crow",
-            "definition": "",
-            "ru": "ворона"
-        },
-        {
+            "emoji": "🐈",
             "en": "cat",
-            "definition": "",
+            "definition_en": "",
             "ru": "кошка"
         },
         {
-            "en": "chicken",
-            "definition": "",
-            "ru": "курица"
-        },
-        {
+            "emoji": "🐄",
             "en": "cow",
-            "definition": "",
+            "definition_en": "",
             "ru": "корова"
         },
         {
+            "emoji": "🦮",
             "en": "dog",
-            "definition": "",
+            "definition_en": "",
             "ru": "собака"
         },
         {
-            "en": "elephant",
-            "definition": "",
-            "ru": "слон"
-        },
-        {
-            "en": "fish",
-            "definition": "",
-            "ru": "рыба"
-        },
-        {
-            "en": "fox",
-            "definition": "",
-            "ru": "лиса"
-        },
-        {
+            "emoji": "🐎",
             "en": "horse",
-            "definition": "",
+            "definition_en": "",
             "ru": "лошадь"
         },
         {
-            "en": "kangaroo",
-            "definition": "",
-            "ru": "кенгуру"
-        },
-        {
-            "en": "lion",
-            "definition": "",
-            "ru": "лев"
-        },
-        {
-            "en": "monkey",
-            "definition": "",
-            "ru": "обезьяна"
-        },
-        {
-            "en": "penguin",
-            "definition": "",
-            "ru": "пингвин"
-        },
-        {
+            "emoji": "🐐",
             "en": "goat",
-            "definition": "",
+            "definition_en": "",
             "ru": "коза"
         },
         {
-            "en": "rabbit",
-            "definition": "",
-            "ru": "кролик"
+            "emoji": "🐖",
+            "en": "pig",
+            "definition_en": "",
+            "ru": "свинья"
         },
         {
+            "emoji": "🐑",
             "en": "sheep",
-            "definition": "",
+            "definition_en": "",
             "ru": "овца"
         },
         {
+            "emoji": "🐶",
+            "en": "puppy",
+            "definition_en": "",
+            "ru": "щенок"
+        },
+        {
+            "emoji": "🐫",
+            "en": "camel",
+            "definition_en": "",
+            "ru": "верблюд"
+        },
+        {
+            "emoji": "🐏",
+            "en": "ram",
+            "definition_en": "",
+            "ru": "баран"
+        },
+        {
+            "emoji": "🐇",
+            "en": "rabbit",
+            "definition_en": "",
+            "ru": "кролик"
+        }
+    ],
+    "wild": [
+        {
+            "emoji": "🦊",
+            "en": "fox",
+            "definition_en": "",
+            "ru": "лиса"
+        },
+        {
+            "emoji": "🐻",
+            "en": "bear",
+            "definition_en": "",
+            "ru": "медведь"
+        },
+        {
+            "emoji": "🦔",
+            "en": "hedgehog",
+            "definition_en": "",
+            "ru": "еж"
+        },
+        {
+            "emoji": "🐸",
+            "en": "frog",
+            "definition_en": "",
+            "ru": "лягушка"
+        },
+        {
+            "emoji": "🦌",
+            "en": "deer",
+            "definition_en": "",
+            "ru": "олень"
+        },
+        {
+            "emoji": "🐿",
+            "en": "chipmunk",
+            "definition_en": "",
+            "ru": "бурундук"
+        },
+        {
+            "emoji": "🦨",
+            "en": "skunk",
+            "definition_en": "",
+            "ru": "скунс"
+        },
+        {
+            "emoji": "🦦",
+            "en": "otter",
+            "definition_en": "",
+            "ru": "выдра"
+        },
+        {
+            "emoji": "🦫",
+            "en": "beaver",
+            "definition_en": "",
+            "ru": "бобр"
+        },
+        {
+            "emoji": "🐺",
+            "en": "wolf",
+            "definition_en": "",
+            "ru": "волк"
+        },
+        {
+            "emoji": "🐀",
+            "en": "rat",
+            "definition_en": "",
+            "ru": "крыса"
+        },
+        {
+            "emoji": "🦝",
+            "en": "rackoon",
+            "definition_en": "",
+            "ru": "енот"
+        },
+        {
+            "emoji": "🐗",
+            "en": "boar",
+            "definition_en": "",
+            "ru": "кабан"
+        },
+        {
+            "emoji": "🦡",
+            "en": "badger",
+            "definition_en": "",
+            "ru": "барсук"
+        },
+        {
+            "emoji": "🦇",
+            "en": "bat",
+            "definition_en": "",
+            "ru": "летучая мышь"
+        },
+        {
+            "emoji": "🐍",
+            "en": "snake",
+            "definition_en": "",
+            "ru": "змея"
+        },
+        {
+            "emoji": "🦎",
+            "en": "lizzard",
+            "definition_en": "",
+            "ru": "ящерица"
+        },
+    ],
+    "exotic": [
+        {
+            "emoji": "🐘",
+            "en": "elephant",
+            "definition_en": "",
+            "ru": "слон"
+        },
+        {
+            "emoji": "🦘",
+            "en": "kangaroo",
+            "definition_en": "",
+            "ru": "кенгуру"
+        },
+        {
+            "emoji": "🦁",
+            "en": "lion",
+            "definition_en": "",
+            "ru": "лев"
+        },
+        {
+            "emoji": "🐒",
+            "en": "monkey",
+            "definition_en": "",
+            "ru": "обезьяна"
+        },
+        {
+            "emoji": "🦬",
+            "en": "bison",
+            "definition_en": "",
+            "ru": "бизон"
+        },
+        {
+            "emoji": "🐃",
+            "en": "buffalo",
+            "definition_en": "",
+            "ru": "буйвол"
+        },
+        {
+            "emoji": "🦓",
+            "en": "zebra",
+            "definition_en": "",
+            "ru": "зебра"
+        },
+        {
+            "emoji": "🐢",
+            "en": "turtle",
+            "definition_en": "",
+            "ru": "черепаха"
+        },
+        {
+            "emoji": "🐼",
+            "en": "panda",
+            "definition_en": "",
+            "ru": "панда"
+        },
+        {
+            "emoji": "🐆",
+            "en": "leopard",
+            "definition_en": "",
+            "ru": "леопард"
+        },
+        {
+            "emoji": "🦍",
+            "en": "gorilla",
+            "definition_en": "",
+            "ru": "горилла"
+        },
+        {
+            "emoji": "🦛",
+            "en": "hippopotamus",
+            "definition_en": "",
+            "ru": "бегемот"
+        },
+        {
+            "emoji": "🦏",
+            "en": "rhinocerus",
+            "definition_en": "",
+            "ru": "носорог"
+        },
+        {
+            "emoji": "🐅",
             "en": "tiger",
-            "definition": "",
+            "definition_en": "",
             "ru": "тигр"
         },
         {
+            "emoji": "🦒",
+            "en": "giraffe",
+            "definition_en": "",
+            "ru": "жираф"
+        },
+        {
+            "emoji": "🐊",
+            "en": "crocodile",
+            "definition_en": "",
+            "ru": "крокодил"
+        },
+        {
+            "emoji": "🦥",
+            "en": "sloth",
+            "definition_en": "",
+            "ru": "лень"
+        },
+        {
+            "emoji": "🦣",
+            "en": "mammoth",
+            "definition_en": "",
+            "ru": "мамонт"
+        },
+        {
+            "emoji": "🦧",
+            "en": "orangutan",
+            "definition_en": "",
+            "ru": "орангутанг"
+        }
+    ],
+    "bird": [
+        {
+            "emoji": "🦢",
+            "en": "swan",
+            "definition_en": "",
+            "ru": "лебедь"
+        },
+        {
+            "emoji": "🦃",
+            "en": "turkey",
+            "definition_en": "",
+            "ru": "индейка"
+        },
+        {
+            "emoji": "🐣",
+            "en": "chick",
+            "definition_en": "",
+            "ru": "цыплёнок"
+        },
+        {
+            "emoji": "🦩",
+            "en": "flamingo",
+            "definition_en": "",
+            "ru": "фламинго"
+        },
+        {
+            "emoji": "🦉",
+            "en": "owl",
+            "definition_en": "",
+            "ru": "сова"
+        },
+        {
+            "emoji": "🕊",
+            "en": "dove",
+            "definition_en": "",
+            "ru": "голубь"
+        },
+        {
+            "emoji": "🦅",
+            "en": "eagle",
+            "definition_en": "",
+            "ru": "орел"
+        },
+        {
+            "emoji": "🦆",
+            "en": "duck",
+            "definition_en": "",
+            "ru": "утка"
+        },
+        {
+            "emoji": "🦜",
+            "en": "parrot",
+            "definition_en": "",
+            "ru": "попугай"
+        },
+        {
+            "emoji": "🐦",
+            "en": "bird",
+            "definition_en": "",
+            "ru": "птица"
+        },
+        {
+            "emoji": "🐔",
+            "en": "chicken",
+            "definition_en": "",
+            "ru": "курица"
+        },
+        {
+            "emoji": "🐧",
+            "en": "penguin",
+            "definition_en": "",
+            "ru": "пингвин"
+        },
+        {
+            "emoji": "🐓",
+            "en": "rooster",
+            "definition_en": "",
+            "ru": "петух"
+        },
+        {
+            "emoji": "🦚",
+            "en": "peacock",
+            "definition_en": "",
+            "ru": "павлин"
+        }
+    ],
+    "sea": [
+        {
+            "emoji": "🐟",
+            "en": "fish",
+            "definition_en": "",
+            "ru": "рыба"
+        },
+        {
+            "emoji": "🐋",
             "en": "whale",
-            "definition": "",
+            "definition_en": "",
             "ru": "кит"
         },
         {
-            "en": "wolf",
-            "definition": "",
-            "ru": "волк"
+            "emoji": "🦈",
+            "en": "shark",
+            "definition_en": "",
+            "ru": "акула"
+        },
+        {
+            "emoji": "🦭",
+            "en": "seal",
+            "definition_en": "",
+            "ru": "тюлень"
+        },
+        {
+            "emoji": "🦀",
+            "en": "crab",
+            "definition_en": "",
+            "ru": "краб"
+        },
+        {
+            "emoji": "🦑",
+            "en": "squid",
+            "definition_en": "",
+            "ru": "кальмар"
+        },
+        {
+            "emoji": "🐬",
+            "en": "dolphin",
+            "definition_en": "",
+            "ru": "дельфин"
+        },
+        {
+            "emoji": "🦞",
+            "en": "lobster",
+            "definition_en": "",
+            "ru": "лобстер"
+        },
+        {
+            "emoji": "🐙",
+            "en": "octopus",
+            "definition_en": "",
+            "ru": "осьминог"
+        },
+        {
+            "emoji": "🦐",
+            "en": "shrimp",
+            "definition_en": "",
+            "ru": "креветка"
+        }
+    ],
+    "insect": [
+        {
+            "emoji": "🕷",
+            "en": "spider",
+            "definition_en": "",
+            "ru": "паук"
+        },
+        {
+            "emoji": "🪰",
+            "en": "fly",
+            "definition_en": "",
+            "ru": "муха"
+        },
+        {
+            "emoji": "🐌",
+            "en": "snail",
+            "definition_en": "",
+            "ru": "улитка"
+        },
+        {
+            "emoji": "🦗",
+            "en": "cricket",
+            "definition_en": "",
+            "ru": "сверчок"
+        },
+        {
+            "emoji": "🐛",
+            "en": "caterpillar",
+            "definition_en": "",
+            "ru": "гусеница"
+        },
+        {
+            "emoji": "🦋",
+            "en": "butterfly",
+            "definition_en": "",
+            "ru": "бабочка"
+        },
+        {
+            "emoji": "🐝",
+            "en": "bee",
+            "definition_en": "",
+            "ru": "пчела"
+        },
+        {
+            "emoji": "🐜",
+            "en": "ant",
+            "definition_en": "",
+            "ru": "муравей"
+        },
+        {
+            "emoji": "🦂",
+            "en": "scorpion",
+            "definition_en": "",
+            "ru": "скорпион"
+        },
+        {
+            "emoji": "🪱",
+            "en": "worm",
+            "definition_en": "",
+            "ru": "червь"
         }
     ],
     "fruit": [
         {
+            "emoji": "🍎",
             "en": "apple",
-            "definition": "",
+            "definition_en": "",
             "ru": "яблоко"
         },
         {
+            "emoji": "",
             "en": "apricot",
-            "definition": "",
+            "definition_en": "",
             "ru": "абрикос"
         },
         {
+            "emoji": "🥑",
             "en": "avocado",
-            "definition": "",
+            "definition_en": "",
             "ru": "авокадо"
         },
         {
+            "emoji": "🍌",
             "en": "banana",
-            "definition": "",
+            "definition_en": "",
             "ru": "банан"
         },
         {
-            "en": "bell pepper",
-            "definition": "",
-            "ru": "болгарский перец"
-        },
-        {
+            "emoji": "",
             "en": "blackberry",
-            "definition": "",
+            "definition_en": "",
             "ru": "ежевика"
         },
         {
+            "emoji": "🫐",
             "en": "blueberry",
-            "definition": "",
+            "definition_en": "",
             "ru": "черника"
         },
         {
+            "emoji": "🍒",
             "en": "cherry",
-            "definition": "",
+            "definition_en": "",
             "ru": "вишня"
         },
         {
-            "en": "chili pepper",
-            "definition": "",
-            "ru": "перец чили"
-        },
-        {
+            "emoji": "🥥",
             "en": "coconut",
-            "definition": "",
+            "definition_en": "",
             "ru": "кокос"
         },
         {
+            "emoji": "",
             "en": "cranberry",
-            "definition": "",
+            "definition_en": "",
             "ru": "клюква"
         },
         {
-            "en": "cucumber",
-            "definition": "",
-            "ru": "огурец"
-        },
-        {
+            "emoji": "",
             "en": "date",
-            "definition": "",
+            "definition_en": "",
             "ru": "финик"
         },
         {
-            "en": "eggplant",
-            "definition": "",
-            "ru": "баклажан"
-        },
-        {
+            "emoji": "",
             "en": "fig",
-            "definition": "",
+            "definition_en": "",
             "ru": "инжир"
         },
         {
+            "emoji": "",
             "en": "gooseberry",
-            "definition": "",
+            "definition_en": "",
             "ru": "крыжовник"
         },
         {
-            "en": "grape",
-            "definition": "",
+            "emoji": "🍇",
+            "en": "grapes",
+            "definition_en": "",
             "ru": "виноград"
         },
         {
+            "emoji": "",
             "en": "grapefruit",
-            "definition": "",
+            "definition_en": "",
             "ru": "грейпфрут"
         },
         {
+            "emoji": "",
             "en": "guava",
-            "definition": "",
+            "definition_en": "",
             "ru": "гуава"
         },
         {
-            "en": "kiwi fruit",
-            "definition": "",
+            "emoji": "🥝",
+            "en": "kiwi",
+            "definition_en": "",
             "ru": "киви"
         },
         {
+            "emoji": "🍋",
             "en": "lemon",
-            "definition": "",
+            "definition_en": "",
             "ru": "лимон"
         },
         {
+            "emoji": "",
             "en": "lime",
-            "definition": "",
+            "definition_en": "",
             "ru": "лайм"
         },
         {
-            "en": "mandarine",
-            "definition": "",
-            "ru": "мандарин"
-        },
-        {
+            "emoji": "🥭",
             "en": "mango",
-            "definition": "",
+            "definition_en": "",
             "ru": "манго"
         },
         {
+            "emoji": "🍈",
             "en": "melon",
-            "definition": "",
+            "definition_en": "",
             "ru": "дыня"
         },
         {
+            "emoji": "",
             "en": "nectarine",
-            "definition": "",
+            "definition_en": "",
             "ru": "нектарин"
         },
         {
-            "en": "nut",
-            "definition": "",
-            "ru": "орех"
+            "emoji": "🌰",
+            "en": "chestnut",
+            "definition_en": "",
+            "ru": "каштан"
         },
         {
+            "emoji": "🫒",
             "en": "olive",
-            "definition": "",
+            "definition_en": "",
             "ru": "оливковое"
         },
         {
+            "emoji": "",
             "en": "orange",
-            "definition": "",
+            "definition_en": "",
             "ru": "апельсин"
         },
         {
+            "emoji": "",
             "en": "papaya",
-            "definition": "",
+            "definition_en": "",
             "ru": "папайя"
         },
         {
+            "emoji": "🍑",
             "en": "peach",
-            "definition": "",
+            "definition_en": "",
             "ru": "персик"
         },
         {
+            "emoji": "🍐",
             "en": "pear",
-            "definition": "",
+            "definition_en": "",
             "ru": "груша"
         },
         {
+            "emoji": "🍍",
             "en": "pineapple",
-            "definition": "",
+            "definition_en": "",
             "ru": "ананас"
         },
         {
+            "emoji": "",
             "en": "plum",
-            "definition": "",
+            "definition_en": "",
             "ru": "слива"
         },
         {
+            "emoji": "",
             "en": "pomegranate",
-            "definition": "",
+            "definition_en": "",
             "ru": "гранат"
         },
         {
+            "emoji": "",
             "en": "raisin",
-            "definition": "",
+            "definition_en": "",
             "ru": "изюм"
         },
         {
+            "emoji": "",
             "en": "raspberry",
+            "definition_en": "",
             "ru": "малина"
         },
         {
+            "emoji": "🍓",
             "en": "strawberry",
-            "definition": "",
+            "definition_en": "",
             "ru": "клубника"
         },
         {
+            "emoji": "🍊",
             "en": "tangerine",
-            "definition": "",
+            "definition_en": "",
             "ru": "мандарин"
         },
         {
+            "emoji": "🍉",
+            "en": "watermelon",
+            "definition_en": "",
+            "ru": "арбуз"
+        }
+    ],
+    "": [
+        {
+            "emoji": "🥜",
+            "en": "peanut",
+            "definition_en": "",
+            "ru": "арахис"
+        }
+    ],
+    "vegetable": [
+        {
+            "emoji": "🍆",
+            "en": "eggplant",
+            "definition_en": "",
+            "ru": "баклажан"
+        },
+        {
+            "emoji": "🌶",
+            "en": "chili pepper",
+            "definition_en": "",
+            "ru": "перец чили"
+        },
+        {
+            "emoji": "🍅",
             "en": "tomato",
-            "definition": "",
+            "definition_en": "",
             "ru": "помидор"
         },
         {
-            "en": "watermelon",
-            "definition": "",
-            "ru": "арбуз"
+            "emoji": "🥒",
+            "en": "cucumber",
+            "definition_en": "",
+            "ru": "огурец"
+        },
+        {
+            "emoji": "🫑",
+            "en": "bell pepper",
+            "definition_en": "",
+            "ru": "болгарский перец"
+        },
+        {
+            "emoji": "🥔",
+            "en": "potato",
+            "definition_en": "",
+            "ru": "картошка"
+        },
+        {
+            "emoji": "🌽",
+            "en": "corn",
+            "definition_en": "",
+            "ru": "кукуруза"
+        },
+        {
+            "emoji": "🥕",
+            "en": "carrot",
+            "definition_en": "",
+            "ru": "морковь"
+        },
+        {
+            "emoji": "🥦",
+            "en": "broccoli",
+            "definition_en": "",
+            "ru": "брокколи"
+        },
+        {
+            "emoji": "🥗",
+            "en": "salad",
+            "definition_en": "",
+            "ru": "салат"
+        },
+        {
+            "emoji": "🧅",
+            "en": "onion",
+            "definition_en": "",
+            "ru": "лук"
+        },
+        {
+            "emoji": "🧄",
+            "en": "garlic",
+            "definition_en": "",
+            "ru": "чеснок"
+        },
+        {
+            "emoji": "🍠",
+            "en": "sweet potato",
+            "definition_en": "",
+            "ru": "сладкий картофель"
+        },
+        {
+            "emoji": "🥬",
+            "en": "leafy greens",
+            "definition_en": "",
+            "ru": "зелень"
         }
     ]
 }
