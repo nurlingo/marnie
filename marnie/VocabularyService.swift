@@ -7,10 +7,9 @@
 
 import Foundation
 
-class LanguageService {
+class VocabularyService {
     
-    var vocabularyDictionary: [String:[Phrase]]
-    var phrasesDictionary: [String:[Phrase]]
+    var vocabularyDictionary: [String:[Vocabulary]]
     
     var locale: String
     var topic: Topic
@@ -20,37 +19,25 @@ class LanguageService {
         self.locale = locale
         self.topic = topic
         
-        vocabularyDictionary = Bundle.main.decode([String:[Phrase]].self, from: "Vocabulary.json")
-        phrasesDictionary = Bundle.main.decode([String:[Phrase]].self, from: "Phrase.json")
+        vocabularyDictionary = Bundle.main.decode([String:[Vocabulary]].self, from: "Vocabulary.json")
+    }
+    
+    var topicTitle: String {
+        locale == "ru" ? topic.ru : topic.en
     }
     
     var words: [String] {
-        if let words = vocabularyDictionary[topic.id] {
+        if let words = vocabularyDictionary[topic.id]?.filter({!$0.emoji.isEmpty}) {
             return locale == "ru" ? words.map({$0.ru}) : words.map({$0.en})
         }
         return []
     }
     
-    var encouragement: String {
-        if let phrase = phrasesDictionary["encouragement"]?.randomElement() {
-            return locale == "ru" ? phrase.ru : phrase.en
+    var emojis: [String] {
+        if let words = vocabularyDictionary[topic.id]?.filter({!$0.emoji.isEmpty}) {
+            return words.map({$0.emoji})
         }
-        return ""
-        
-    }
-    
-    var greeting: String {
-        if let phrase = phrasesDictionary["greeting"]?.randomElement() {
-            return locale == "ru" ? phrase.ru : phrase.en
-        }
-        return ""
-    }
-    
-    var farewell: String {
-        if let phrase = phrasesDictionary["farewell"]?.randomElement() {
-            return locale == "ru" ? phrase.ru : phrase.en
-        }
-        return ""
+        return []
     }
 }
     

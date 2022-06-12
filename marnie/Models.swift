@@ -11,7 +11,12 @@ struct Topic: Decodable, Identifiable {
     let id: String
     let en: String
     let ru: String
-    
+}
+
+struct Vocabulary: Decodable {
+    let en: String
+    let ru: String
+    let emoji: String
 }
 
 struct Phrase: Decodable {

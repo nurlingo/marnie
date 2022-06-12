@@ -12,9 +12,11 @@
 		B736519E284BC63B001D7ED5 /* Phrase.json in Resources */ = {isa = PBXBuildFile; fileRef = B736519D284BC63B001D7ED5 /* Phrase.json */; };
 		B73651A0284BC99A001D7ED5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B736519F284BC99A001D7ED5 /* MainView.swift */; };
 		B73651A2284BC9DE001D7ED5 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73651A1284BC9DE001D7ED5 /* SpeechService.swift */; };
-		B73651A4284BCAC0001D7ED5 /* LanguageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73651A3284BCAC0001D7ED5 /* LanguageService.swift */; };
+		B73651A4284BCAC0001D7ED5 /* VocabularyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73651A3284BCAC0001D7ED5 /* VocabularyService.swift */; };
 		B73651A6284BCD01001D7ED5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73651A5284BCD01001D7ED5 /* Models.swift */; };
 		B7669F61284576FF00B2ED80 /* VisualisationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7669F60284576FF00B2ED80 /* VisualisationHelper.swift */; };
+		B7AC0F11285613E90078BE07 /* VisualizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0F10285613E90078BE07 /* VisualizationView.swift */; };
+		B7AC0F1328561C000078BE07 /* PhraseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0F1228561C000078BE07 /* PhraseService.swift */; };
 		B7D05969283A2BED00F3E59E /* marnieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D05968283A2BED00F3E59E /* marnieApp.swift */; };
 		B7D0596B283A2BED00F3E59E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D0596A283A2BED00F3E59E /* GameView.swift */; };
 		B7D0596D283A2BF100F3E59E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D0596C283A2BF100F3E59E /* Assets.xcassets */; };
@@ -27,9 +29,11 @@
 		B736519D284BC63B001D7ED5 /* Phrase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Phrase.json; sourceTree = "<group>"; };
 		B736519F284BC99A001D7ED5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B73651A1284BC9DE001D7ED5 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
-		B73651A3284BCAC0001D7ED5 /* LanguageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageService.swift; sourceTree = "<group>"; };
+		B73651A3284BCAC0001D7ED5 /* VocabularyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyService.swift; sourceTree = "<group>"; };
 		B73651A5284BCD01001D7ED5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		B7669F60284576FF00B2ED80 /* VisualisationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisationHelper.swift; sourceTree = "<group>"; };
+		B7AC0F10285613E90078BE07 /* VisualizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationView.swift; sourceTree = "<group>"; };
+		B7AC0F1228561C000078BE07 /* PhraseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseService.swift; sourceTree = "<group>"; };
 		B7D05965283A2BED00F3E59E /* Marnie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marnie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D05968283A2BED00F3E59E /* marnieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marnieApp.swift; sourceTree = "<group>"; };
 		B7D0596A283A2BED00F3E59E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -70,8 +74,10 @@
 				B7D05968283A2BED00F3E59E /* marnieApp.swift */,
 				B736519F284BC99A001D7ED5 /* MainView.swift */,
 				B7D0596A283A2BED00F3E59E /* GameView.swift */,
+				B7AC0F10285613E90078BE07 /* VisualizationView.swift */,
 				B73651A1284BC9DE001D7ED5 /* SpeechService.swift */,
-				B73651A3284BCAC0001D7ED5 /* LanguageService.swift */,
+				B73651A3284BCAC0001D7ED5 /* VocabularyService.swift */,
+				B7AC0F1228561C000078BE07 /* PhraseService.swift */,
 				B7669F60284576FF00B2ED80 /* VisualisationHelper.swift */,
 				B73651A5284BCD01001D7ED5 /* Models.swift */,
 				B7365199284BC498001D7ED5 /* Topics.json */,
@@ -165,12 +171,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7D0596B283A2BED00F3E59E /* GameView.swift in Sources */,
-				B73651A4284BCAC0001D7ED5 /* LanguageService.swift in Sources */,
+				B73651A4284BCAC0001D7ED5 /* VocabularyService.swift in Sources */,
 				B73651A0284BC99A001D7ED5 /* MainView.swift in Sources */,
+				B7AC0F1328561C000078BE07 /* PhraseService.swift in Sources */,
 				B73651A2284BC9DE001D7ED5 /* SpeechService.swift in Sources */,
 				B7669F61284576FF00B2ED80 /* VisualisationHelper.swift in Sources */,
 				B7D05969283A2BED00F3E59E /* marnieApp.swift in Sources */,
 				B73651A6284BCD01001D7ED5 /* Models.swift in Sources */,
+				B7AC0F11285613E90078BE07 /* VisualizationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

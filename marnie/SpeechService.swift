@@ -11,12 +11,12 @@ import AVFoundation
 
 class SpeechService {
     
-    let ls: LanguageService
+    let locale: String
         
     private let synthesizer = AVSpeechSynthesizer()
     
-    init(ls: LanguageService) {
-        self.ls = ls
+    init(locale: String) {
+        self.locale = locale
     }
     
     func setDelegate(_ delegate: AVSpeechSynthesizerDelegate) {
@@ -28,7 +28,7 @@ class SpeechService {
     func utter(_ text: String) {
         DispatchQueue.global(qos: .userInitiated).async {
             let utterance = AVSpeechUtterance(string: text)
-            utterance.voice = AVSpeechSynthesisVoice(language: self.ls.locale)
+            utterance.voice = AVSpeechSynthesisVoice(language: self.locale)
             utterance.rate = 0.5
             self.synthesizer.speak(utterance)
         }
@@ -37,7 +37,7 @@ class SpeechService {
     func utterSlowly(_ text: String, addition: String = "") {
         DispatchQueue.global(qos: .userInitiated).async {
             let utterance = AVSpeechUtterance(string: text + ". " + addition)
-            utterance.voice = AVSpeechSynthesisVoice(language: self.ls.locale)
+            utterance.voice = AVSpeechSynthesisVoice(language: self.locale)
             utterance.rate = 0.4
             
             self.synthesizer.speak(utterance)

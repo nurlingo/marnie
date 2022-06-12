@@ -10,7 +10,6 @@ import SwiftUI
 struct MainView: View {
     
     let topics = Bundle.main.decode([Topic].self, from: "Topics.json")
-
     
     var title: String {
         localeIndex == 0 ? "Темы на выбор" : "Topics to choose"
@@ -21,11 +20,14 @@ struct MainView: View {
 //        Locale.current.identifier == "ru" ? 0 : 1
     }()
     
+    var locale: String {
+        localeIndex == 0 ? "ru" : "en"
+    }
+    
     var body: some View {
         
         NavigationView {
         ScrollView(.vertical, showsIndicators: false) {
-            
             
                 Picker("Choose App Language", selection: $localeIndex) {
                     Text("Русский").tag(0)
@@ -35,10 +37,10 @@ struct MainView: View {
                 
                 ForEach(topics) { topic in
                     NavigationLink {
-                        let locale = localeIndex == 0 ? "ru" : "en"
-                        let ls = LanguageService(locale: locale, topic: topic)
-                        let ss = SpeechService(ls: ls)
-                        let gameVM = GameViewModel(ls: ls, ss: ss)
+                        let vs = VocabularyService(locale: locale, topic: topic)
+                        let ss = SpeechService(locale: locale)
+                        let ps = PhraseService(locale: locale)
+                        let gameVM = GameViewModel(vs: vs, ss: ss, ps: ps)
                         GameView(vm: gameVM)
                     } label: {
                         Text(localeIndex == 0 ? topic.ru : topic.en)
@@ -47,6 +49,10 @@ struct MainView: View {
                 }.navigationTitle(title)
                 
             }
+        }.onAppear {
+            let ss = SpeechService(locale: locale)
+            let ps = PhraseService(locale: locale)
+            ss.utterSlowly(ps.greeting)
         }
     }
     

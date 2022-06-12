@@ -17,19 +17,9 @@ struct GameView: View {
     var body: some View {
         
         VStack {
-            ScrollView(.horizontal, showsIndicators: false) {
-                LazyHStack {
-                    ForEach(vm.imageUrls, id: \.self) { imageUrl in
-                        AsyncImage(url: URL(string: imageUrl)) { image in
-                            image.resizable()
-                        } placeholder: {
-                            Color.gray
-                        }
-                        .frame(width: 250, height: 250)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                    }
-                }
-            }
+            Text(vm.emoji)
+                .font(Font.system(size: 140))
+                .padding()
             Text(vm.phrase)
                 .font(Font.largeTitle)
                 .fontWeight(.bold)
@@ -59,37 +49,40 @@ struct GameView: View {
 
 class GameViewModel: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
 
-    @Published fileprivate var gameIsOn = false
-    @Published fileprivate var phrase: String = " "
-    @Published fileprivate var imageUrls = [String]()
+    @Published var emoji: String = ""
+    @Published var phrase: String = " "
+    @Published var imageUrls = [String]()
     fileprivate var playerInput: String = ""
-    let ls: LanguageService
+    let vs: VocabularyService
     let ss: SpeechService
+    let ps: PhraseService
     
-    init(ls: LanguageService, ss: SpeechService) {
-        self.ls = ls
+    init(vs: VocabularyService, ss: SpeechService, ps: PhraseService) {
+        self.vs = vs
         self.ss = ss
+        self.ps = ps
     }
     
-    var words = [String]()
+    private var words = [String]()
+    private var emojis = [String]()
     
     func startNewGame() {
-        gameIsOn = true
-        
-        words = ls.words
+        words = vs.words
+        emojis = vs.emojis
         ss.setDelegate(self)
-        ss.utterSlowly(ls.greeting)
-                    
+        ss.utterSlowly(ps.lessonStarted, addition: vs.topicTitle)
     }
     
     func goToNextPhrase() {
         
         if words.count > 0 {
-            phrase = words.removeLast()
-            let querry = phrase + " " + ls.topic.id
-            VisualizerHelper.shared.requestImagesFromGoogle(querry: querry, handler: self.handleImages)
+            self.phrase = words.removeLast()
+            
+            let emoji = emojis.removeLast()
+            self.emoji = emoji.isEmpty ? "?" : emoji
+            
         } else {
-            ss.utterSlowly(ls.farewell)
+            ss.utterSlowly(ps.farewell)
             DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
                 fatalError()
             }
@@ -122,29 +115,11 @@ class GameViewModel: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
             playerInput = ""
             ss.utterSlowly(
                 self.phrase,
-                addition: ls.encouragement
+                addition: ps.encouragement
             )
             // pronounce the word
             // go to next phrase
         }
-    }
-    
-    func handleImages(response: GoogleResponse?, error: GenericError?) {
-        
-        if let error = error {
-            print(#function, "error getting the imageItems remotly -> \(error.type) \(error.description)")
-            return
-        }
-        
-        guard let response = response else {
-            print(#function, "imageItems are nil")
-            return
-        }
-        
-        DispatchQueue.main.async {
-            self.imageUrls = response.items.map{ $0.link }.shuffled()
-        }
-        
     }
     
 }
