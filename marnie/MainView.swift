@@ -9,29 +9,30 @@ import SwiftUI
 
 struct MainView: View {
     
-    let topics = Bundle.main.decode([Topic].self, from: "Topics.json")
-    
-    var title: String {
-        localeIndex == 0 ? "Темы на выбор" : "Topics to choose"
-    }
-
     @State var localeIndex: Int = {
-        0
-//        Locale.current.identifier == "ru" ? 0 : 1
+        Locale.current.identifier == "ru" ? 0 : 1
     }()
+    
+    let topics = Bundle.main.decode([Topic].self, from: "Topics.json")
     
     var locale: String {
         localeIndex == 0 ? "ru" : "en"
     }
     
+    var title: String {
+        localeIndex == 0 ? "Темы на выбор" : "Topics to choose"
+    }
+    
+    
     var body: some View {
         
         NavigationView {
-        ScrollView(.vertical, showsIndicators: false) {
             
-                Picker("Choose App Language", selection: $localeIndex) {
-                    Text("Русский").tag(0)
-                    Text("English").tag(1)
+            ScrollView(.vertical, showsIndicators: false) {
+                
+                Picker("Choose Language", selection: $localeIndex) {
+                    Text("Русский").tag(0).font(.title)
+                    Text("English").tag(1).font(.title)
                 }
                 .pickerStyle(.segmented)
                 
@@ -47,18 +48,23 @@ struct MainView: View {
                             if UserDefaults.standard.bool(forKey: "\(topic.id)_\(locale)") {
                                 Text("✅").font(.title)
                             }
-                            Text(localeIndex == 0 ? topic.ru : topic.en)
+                            Text(locale == "ru" ? topic.ru : topic.en)
                                 .font(.title)
+                            if UserDefaults.standard.bool(forKey: "\(topic.id)_\(locale)") {
+                                Text("✅").font(.title)
+                            }
                         }
                         
                     }
                 }.navigationTitle(title)
                 
+            }.onAppear {
+                let ss = SpeechService(locale: locale)
+                let ps = PhraseService(locale: locale)
+                ss.utterSlowly(ps.greeting)
             }
-        }.onAppear {
-            let ss = SpeechService(locale: locale)
-            let ps = PhraseService(locale: locale)
-            ss.utterSlowly(ps.greeting)
+    
+            
         }
     }
     

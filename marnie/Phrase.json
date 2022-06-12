@@ -31,8 +31,8 @@
     ],
     "greeting": [
         {
-            "ru": "Ассаляму аляйкум, Дамелии и Адиля! Давайте учиться читать! Выберите тему!",
-            "en": "Salaam 'alaikum, Marnu and Duda! Let's learn to read! Choose a topic!"
+            "ru": "Ассаляму аляйкум! Давайте учиться читать! Выберите тему!",
+            "en": "Salaam 'alaikum! Let's learn to read! Choose a topic!"
         }
     ]
 }

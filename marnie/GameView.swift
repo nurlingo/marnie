@@ -18,7 +18,7 @@ struct GameView: View {
         
         VStack {
             Text(vm.emoji)
-                .font(Font.system(size: 140))
+                .font(Font.system(size: 110))
                 .padding()
             Text(vm.phrase)
                 .font(Font.largeTitle)
@@ -33,6 +33,7 @@ struct GameView: View {
                 .textCase(.lowercase)
                 .autocapitalization(.none)
                 .focused($isFocused)
+                .disableAutocorrection(true)
                 .onChange(of: playerInput) { [playerInput] newValue in
                     vm.playerInputDidChange(from: playerInput, to: newValue)
                     self.playerInput = vm.playerInput
