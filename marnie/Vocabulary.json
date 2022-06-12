@@ -170,19 +170,19 @@
             "emoji": "🥿🥿",
             "en": "flat shoes",
             "definition_en": "",
-            "ru": ""
+            "ru": "туфли на плоской подошве"
         },
         {
             "emoji": "👠👠",
             "en": "heeled shoes",
             "definition_en": "",
-            "ru": ""
+            "ru": "туфли на каблуке"
         },
         {
             "emoji": "👡👡",
             "en": "heeled sandals",
             "definition_en": "",
-            "ru": ""
+            "ru": "босоножки"
         },
         {
             "emoji": "👟",
@@ -324,19 +324,19 @@
             "emoji": "👅",
             "en": "tongue",
             "definition_en": "",
-            "ru": ""
+            "ru": "язык"
         },
         {
             "emoji": "🧠",
             "en": "brain",
             "definition_en": "",
-            "ru": ""
+            "ru": "мозги"
         },
         {
             "emoji": "🫀",
             "en": "heart",
             "definition_en": "",
-            "ru": ""
+            "ru": "сердце"
         },
         {
             "emoji": "",
@@ -348,37 +348,37 @@
             "emoji": "💀",
             "en": "skull",
             "definition_en": "",
-            "ru": ""
+            "ru": "череп"
         },
         {
             "emoji": "👍",
             "en": "thumb",
             "definition_en": "",
-            "ru": ""
+            "ru": "большой палец"
         },
         {
             "emoji": "👈🏻",
             "en": "index finger",
             "definition_en": "",
-            "ru": ""
+            "ru": "указательный палец"
         },
         {
             "emoji": "👊",
             "en": "fist",
             "definition_en": "",
-            "ru": ""
+            "ru": "кулак"
         },
         {
             "emoji": "💪",
             "en": "arm",
             "definition_en": "",
-            "ru": ""
+            "ru": "рука"
         },
         {
             "emoji": "🤚🏻",
             "en": "hand",
             "definition_en": "Has four fingers and a thumb.",
-            "ru": "рука"
+            "ru": "ладонь"
         },
         {
             "emoji": "👤",
@@ -587,7 +587,7 @@
             "en": "lizzard",
             "definition_en": "",
             "ru": "ящерица"
-        },
+        }
     ],
     "exotic": [
         {
@@ -1218,7 +1218,7 @@
             "emoji": "🥬",
             "en": "leafy greens",
             "definition_en": "",
-            "ru": "зелень"
+            "ru": "листовая зелень"
         }
     ]
 }
