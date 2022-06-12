@@ -83,6 +83,7 @@ class GameViewModel: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
             
         } else {
             ss.utterSlowly(ps.farewell)
+            UserDefaults.standard.set(true, forKey: "\(vs.topic.id)_\(vs.locale)")
             DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
                 fatalError()
             }

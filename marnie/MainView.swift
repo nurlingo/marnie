@@ -43,8 +43,14 @@ struct MainView: View {
                         let gameVM = GameViewModel(vs: vs, ss: ss, ps: ps)
                         GameView(vm: gameVM)
                     } label: {
-                        Text(localeIndex == 0 ? topic.ru : topic.en)
-                            .font(.title)
+                        HStack {
+                            if UserDefaults.standard.bool(forKey: "\(topic.id)_\(locale)") {
+                                Text("✅").font(.title)
+                            }
+                            Text(localeIndex == 0 ? topic.ru : topic.en)
+                                .font(.title)
+                        }
+                        
                     }
                 }.navigationTitle(title)
                 
