@@ -16,6 +16,12 @@
 		B73651A4284BCAC0001D7ED5 /* VocabularyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73651A3284BCAC0001D7ED5 /* VocabularyService.swift */; };
 		B73651A6284BCD01001D7ED5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73651A5284BCD01001D7ED5 /* Models.swift */; };
 		B7669F61284576FF00B2ED80 /* VisualisationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7669F60284576FF00B2ED80 /* VisualisationHelper.swift */; };
+		B79A405A2857E86F007803D1 /* StringLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A40592857E86F007803D1 /* StringLocalization.swift */; };
+		B79A405E2857E9EA007803D1 /* Settings.json in Resources */ = {isa = PBXBuildFile; fileRef = B79A405D2857E9EA007803D1 /* Settings.json */; };
+		B79A40602857EB08007803D1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A405F2857EB08007803D1 /* Settings.swift */; };
+		B79A40622857F4DD007803D1 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A40612857F4DD007803D1 /* ViewRouter.swift */; };
+		B79A40642857F518007803D1 /* SettingsWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A40632857F518007803D1 /* SettingsWrapperView.swift */; };
+		B79A40662857F533007803D1 /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A40652857F533007803D1 /* PurchaseView.swift */; };
 		B7AC0F11285613E90078BE07 /* VisualizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0F10285613E90078BE07 /* VisualizationView.swift */; };
 		B7AC0F1328561C000078BE07 /* PhraseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0F1228561C000078BE07 /* PhraseService.swift */; };
 		B7D05969283A2BED00F3E59E /* marnieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D05968283A2BED00F3E59E /* marnieApp.swift */; };
@@ -35,6 +41,12 @@
 		B73651A3284BCAC0001D7ED5 /* VocabularyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyService.swift; sourceTree = "<group>"; };
 		B73651A5284BCD01001D7ED5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		B7669F60284576FF00B2ED80 /* VisualisationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisationHelper.swift; sourceTree = "<group>"; };
+		B79A40592857E86F007803D1 /* StringLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalization.swift; sourceTree = "<group>"; };
+		B79A405D2857E9EA007803D1 /* Settings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Settings.json; sourceTree = "<group>"; };
+		B79A405F2857EB08007803D1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B79A40612857F4DD007803D1 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		B79A40632857F518007803D1 /* SettingsWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWrapperView.swift; sourceTree = "<group>"; };
+		B79A40652857F533007803D1 /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
 		B7AC0F10285613E90078BE07 /* VisualizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationView.swift; sourceTree = "<group>"; };
 		B7AC0F1228561C000078BE07 /* PhraseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseService.swift; sourceTree = "<group>"; };
 		B7D05965283A2BED00F3E59E /* Marnie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marnie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +75,6 @@
 				4B39911EE597E8539F7A8F7E /* Pods-marnie.debug.xcconfig */,
 				EA1F16785B1ECB808A79BF69 /* Pods-marnie.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -90,6 +101,10 @@
 			children = (
 				B7D05968283A2BED00F3E59E /* marnieApp.swift */,
 				B736519F284BC99A001D7ED5 /* MainView.swift */,
+				B79A40612857F4DD007803D1 /* ViewRouter.swift */,
+				B79A40592857E86F007803D1 /* StringLocalization.swift */,
+				B79A40632857F518007803D1 /* SettingsWrapperView.swift */,
+				B79A40652857F533007803D1 /* PurchaseView.swift */,
 				B7D0596A283A2BED00F3E59E /* GameView.swift */,
 				B7AC0F10285613E90078BE07 /* VisualizationView.swift */,
 				B73651A1284BC9DE001D7ED5 /* SpeechService.swift */,
@@ -97,7 +112,9 @@
 				B7AC0F1228561C000078BE07 /* PhraseService.swift */,
 				B7669F60284576FF00B2ED80 /* VisualisationHelper.swift */,
 				B73651A5284BCD01001D7ED5 /* Models.swift */,
+				B79A405F2857EB08007803D1 /* Settings.swift */,
 				B7365199284BC498001D7ED5 /* Topics.json */,
+				B79A405D2857E9EA007803D1 /* Settings.json */,
 				B736519B284BC4EB001D7ED5 /* Vocabulary.json */,
 				B736519D284BC63B001D7ED5 /* Phrase.json */,
 				B7D0596C283A2BF100F3E59E /* Assets.xcassets */,
@@ -184,6 +201,7 @@
 			files = (
 				B7D05970283A2BF100F3E59E /* Preview Assets.xcassets in Resources */,
 				B736519A284BC499001D7ED5 /* Topics.json in Resources */,
+				B79A405E2857E9EA007803D1 /* Settings.json in Resources */,
 				B7D0596D283A2BF100F3E59E /* Assets.xcassets in Resources */,
 				B736519E284BC63B001D7ED5 /* Phrase.json in Resources */,
 				B736519C284BC4EB001D7ED5 /* Vocabulary.json in Resources */,
@@ -242,9 +260,14 @@
 				B7D0596B283A2BED00F3E59E /* GameView.swift in Sources */,
 				B73651A4284BCAC0001D7ED5 /* VocabularyService.swift in Sources */,
 				B73651A0284BC99A001D7ED5 /* MainView.swift in Sources */,
+				B79A40662857F533007803D1 /* PurchaseView.swift in Sources */,
+				B79A40622857F4DD007803D1 /* ViewRouter.swift in Sources */,
+				B79A405A2857E86F007803D1 /* StringLocalization.swift in Sources */,
 				B7AC0F1328561C000078BE07 /* PhraseService.swift in Sources */,
 				B73651A2284BC9DE001D7ED5 /* SpeechService.swift in Sources */,
+				B79A40602857EB08007803D1 /* Settings.swift in Sources */,
 				B7669F61284576FF00B2ED80 /* VisualisationHelper.swift in Sources */,
+				B79A40642857F518007803D1 /* SettingsWrapperView.swift in Sources */,
 				B7D05969283A2BED00F3E59E /* marnieApp.swift in Sources */,
 				B73651A6284BCD01001D7ED5 /* Models.swift in Sources */,
 				B7AC0F11285613E90078BE07 /* VisualizationView.swift in Sources */,
