@@ -1,3 +1,4 @@
+let basmala = "بسم الله الرحمن الرحيم"
 //
 //  marnieApp.swift
 //  marnie
@@ -7,16 +8,17 @@
 
 import SwiftUI
 
-let locale: String = Locale.current.identifier == "ru" ? "ru" : "en"
-
 @main
 struct marnieApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView().onAppear {
-                let ss = SpeechService(language: locale)
-                let ps = PhraseService(language: locale)
-                ss.utterSlowly(ps.greeting)
+            MainView()
+                .environmentObject(ViewRouter())
+                .onAppear {
+                    let locale: String = Locale.current.identifier == "ru" ? "ru" : "en"
+                    let ss = SpeechService(language: locale)
+                    let ps = PhraseService(language: locale)
+                    ss.utterSlowly(ps.greeting)
             }
         }
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271642AE436A11574E898509 /* Pods_marnie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B684A449734FA7261DFE2EC /* Pods_marnie.framework */; };
 		B736519A284BC499001D7ED5 /* Topics.json in Resources */ = {isa = PBXBuildFile; fileRef = B7365199284BC498001D7ED5 /* Topics.json */; };
 		B736519C284BC4EB001D7ED5 /* Vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = B736519B284BC4EB001D7ED5 /* Vocabulary.json */; };
 		B736519E284BC63B001D7ED5 /* Phrase.json in Resources */ = {isa = PBXBuildFile; fileRef = B736519D284BC63B001D7ED5 /* Phrase.json */; };
@@ -15,6 +16,12 @@
 		B73651A4284BCAC0001D7ED5 /* VocabularyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73651A3284BCAC0001D7ED5 /* VocabularyService.swift */; };
 		B73651A6284BCD01001D7ED5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73651A5284BCD01001D7ED5 /* Models.swift */; };
 		B7669F61284576FF00B2ED80 /* VisualisationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7669F60284576FF00B2ED80 /* VisualisationHelper.swift */; };
+		B79A405A2857E86F007803D1 /* StringLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A40592857E86F007803D1 /* StringLocalization.swift */; };
+		B79A405E2857E9EA007803D1 /* Settings.json in Resources */ = {isa = PBXBuildFile; fileRef = B79A405D2857E9EA007803D1 /* Settings.json */; };
+		B79A40602857EB08007803D1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A405F2857EB08007803D1 /* Settings.swift */; };
+		B79A40622857F4DD007803D1 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A40612857F4DD007803D1 /* ViewRouter.swift */; };
+		B79A40642857F518007803D1 /* SettingsWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A40632857F518007803D1 /* SettingsWrapperView.swift */; };
+		B79A40662857F533007803D1 /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79A40652857F533007803D1 /* PurchaseView.swift */; };
 		B7AC0F11285613E90078BE07 /* VisualizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0F10285613E90078BE07 /* VisualizationView.swift */; };
 		B7AC0F1328561C000078BE07 /* PhraseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AC0F1228561C000078BE07 /* PhraseService.swift */; };
 		B7D05969283A2BED00F3E59E /* marnieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D05968283A2BED00F3E59E /* marnieApp.swift */; };
@@ -24,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B39911EE597E8539F7A8F7E /* Pods-marnie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marnie.debug.xcconfig"; path = "Target Support Files/Pods-marnie/Pods-marnie.debug.xcconfig"; sourceTree = "<group>"; };
+		9B684A449734FA7261DFE2EC /* Pods_marnie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_marnie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7365199284BC498001D7ED5 /* Topics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Topics.json; sourceTree = "<group>"; };
 		B736519B284BC4EB001D7ED5 /* Vocabulary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Vocabulary.json; sourceTree = "<group>"; };
 		B736519D284BC63B001D7ED5 /* Phrase.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Phrase.json; sourceTree = "<group>"; };
@@ -32,6 +41,12 @@
 		B73651A3284BCAC0001D7ED5 /* VocabularyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyService.swift; sourceTree = "<group>"; };
 		B73651A5284BCD01001D7ED5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		B7669F60284576FF00B2ED80 /* VisualisationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualisationHelper.swift; sourceTree = "<group>"; };
+		B79A40592857E86F007803D1 /* StringLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalization.swift; sourceTree = "<group>"; };
+		B79A405D2857E9EA007803D1 /* Settings.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Settings.json; sourceTree = "<group>"; };
+		B79A405F2857EB08007803D1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B79A40612857F4DD007803D1 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		B79A40632857F518007803D1 /* SettingsWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWrapperView.swift; sourceTree = "<group>"; };
+		B79A40652857F533007803D1 /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
 		B7AC0F10285613E90078BE07 /* VisualizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationView.swift; sourceTree = "<group>"; };
 		B7AC0F1228561C000078BE07 /* PhraseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseService.swift; sourceTree = "<group>"; };
 		B7D05965283A2BED00F3E59E /* Marnie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marnie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +54,7 @@
 		B7D0596A283A2BED00F3E59E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		B7D0596C283A2BF100F3E59E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7D0596F283A2BF100F3E59E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA1F16785B1ECB808A79BF69 /* Pods-marnie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marnie.release.xcconfig"; path = "Target Support Files/Pods-marnie/Pods-marnie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,17 +62,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271642AE436A11574E898509 /* Pods_marnie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BA69193BB78F42713CDAB03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B39911EE597E8539F7A8F7E /* Pods-marnie.debug.xcconfig */,
+				EA1F16785B1ECB808A79BF69 /* Pods-marnie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B7D0595C283A2BED00F3E59E = {
 			isa = PBXGroup;
 			children = (
 				B7D05967283A2BED00F3E59E /* marnie */,
 				B7D05966283A2BED00F3E59E /* Products */,
+				3BA69193BB78F42713CDAB03 /* Pods */,
+				F206E9C79F04EE33FE95B515 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +101,10 @@
 			children = (
 				B7D05968283A2BED00F3E59E /* marnieApp.swift */,
 				B736519F284BC99A001D7ED5 /* MainView.swift */,
+				B79A40612857F4DD007803D1 /* ViewRouter.swift */,
+				B79A40592857E86F007803D1 /* StringLocalization.swift */,
+				B79A40632857F518007803D1 /* SettingsWrapperView.swift */,
+				B79A40652857F533007803D1 /* PurchaseView.swift */,
 				B7D0596A283A2BED00F3E59E /* GameView.swift */,
 				B7AC0F10285613E90078BE07 /* VisualizationView.swift */,
 				B73651A1284BC9DE001D7ED5 /* SpeechService.swift */,
@@ -80,7 +112,9 @@
 				B7AC0F1228561C000078BE07 /* PhraseService.swift */,
 				B7669F60284576FF00B2ED80 /* VisualisationHelper.swift */,
 				B73651A5284BCD01001D7ED5 /* Models.swift */,
+				B79A405F2857EB08007803D1 /* Settings.swift */,
 				B7365199284BC498001D7ED5 /* Topics.json */,
+				B79A405D2857E9EA007803D1 /* Settings.json */,
 				B736519B284BC4EB001D7ED5 /* Vocabulary.json */,
 				B736519D284BC63B001D7ED5 /* Phrase.json */,
 				B7D0596C283A2BF100F3E59E /* Assets.xcassets */,
@@ -97,6 +131,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F206E9C79F04EE33FE95B515 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B684A449734FA7261DFE2EC /* Pods_marnie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7D05973283A2BF100F3E59E /* Build configuration list for PBXNativeTarget "marnie" */;
 			buildPhases = (
+				B3D14080C83940FE3E5EF8EA /* [CP] Check Pods Manifest.lock */,
 				B7D05961283A2BED00F3E59E /* Sources */,
 				B7D05962283A2BED00F3E59E /* Frameworks */,
 				B7D05963283A2BED00F3E59E /* Resources */,
+				FC968013E21149B2F29BF611 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +201,7 @@
 			files = (
 				B7D05970283A2BF100F3E59E /* Preview Assets.xcassets in Resources */,
 				B736519A284BC499001D7ED5 /* Topics.json in Resources */,
+				B79A405E2857E9EA007803D1 /* Settings.json in Resources */,
 				B7D0596D283A2BF100F3E59E /* Assets.xcassets in Resources */,
 				B736519E284BC63B001D7ED5 /* Phrase.json in Resources */,
 				B736519C284BC4EB001D7ED5 /* Vocabulary.json in Resources */,
@@ -164,6 +209,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3D14080C83940FE3E5EF8EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-marnie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC968013E21149B2F29BF611 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-marnie/Pods-marnie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-marnie/Pods-marnie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-marnie/Pods-marnie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7D05961283A2BED00F3E59E /* Sources */ = {
@@ -173,9 +260,14 @@
 				B7D0596B283A2BED00F3E59E /* GameView.swift in Sources */,
 				B73651A4284BCAC0001D7ED5 /* VocabularyService.swift in Sources */,
 				B73651A0284BC99A001D7ED5 /* MainView.swift in Sources */,
+				B79A40662857F533007803D1 /* PurchaseView.swift in Sources */,
+				B79A40622857F4DD007803D1 /* ViewRouter.swift in Sources */,
+				B79A405A2857E86F007803D1 /* StringLocalization.swift in Sources */,
 				B7AC0F1328561C000078BE07 /* PhraseService.swift in Sources */,
 				B73651A2284BC9DE001D7ED5 /* SpeechService.swift in Sources */,
+				B79A40602857EB08007803D1 /* Settings.swift in Sources */,
 				B7669F61284576FF00B2ED80 /* VisualisationHelper.swift in Sources */,
+				B79A40642857F518007803D1 /* SettingsWrapperView.swift in Sources */,
 				B7D05969283A2BED00F3E59E /* marnieApp.swift in Sources */,
 				B73651A6284BCD01001D7ED5 /* Models.swift in Sources */,
 				B7AC0F11285613E90078BE07 /* VisualizationView.swift in Sources */,
@@ -303,11 +395,12 @@
 		};
 		B7D05974283A2BF100F3E59E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B39911EE597E8539F7A8F7E /* Pods-marnie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"marnie/Preview Content\"";
 				DEVELOPMENT_TEAM = 27W5LD33EA;
 				ENABLE_PREVIEWS = YES;
@@ -323,7 +416,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nurios.marnie;
 				PRODUCT_NAME = Marnie;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -334,11 +427,12 @@
 		};
 		B7D05975283A2BF100F3E59E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA1F16785B1ECB808A79BF69 /* Pods-marnie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"marnie/Preview Content\"";
 				DEVELOPMENT_TEAM = 27W5LD33EA;
 				ENABLE_PREVIEWS = YES;
@@ -354,7 +448,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nurios.marnie;
 				PRODUCT_NAME = Marnie;
 				SWIFT_EMIT_LOC_STRINGS = YES;

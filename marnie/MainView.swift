@@ -9,8 +9,10 @@ import SwiftUI
 
 struct MainView: View {
     
+    @EnvironmentObject var viewRouter: ViewRouter
+    
     @State var languageIndex: Int = {
-        locale == "ru" ? 0 : 1
+        Locale.current.identifier == "ru" ? 0 : 1
     }()
     
     let topics = Bundle.main.decode([Topic].self, from: "Topics.json")
@@ -56,10 +58,27 @@ struct MainView: View {
                         }
                         
                     }
-                }.navigationTitle(title)
-                
+                }
+                .navigationTitle(title)
+                .navigationBarItems(
+                    trailing:
+                        NavigationLink(destination:
+                                        SettingsWrapperView(language: language)
+                                        .onAppear {
+                                            viewRouter.willMoveToDonationScreen = false
+                                        }
+                                        .navigationBarTitle(Text("settings".localized(for: language)))
+                                        .navigate(to:
+                                                    PurchaseView(language: language).navigationBarTitle("Donate".localized(for: language)),
+                                                  when:
+                                                    $viewRouter
+                                                    .willMoveToDonationScreen
+                                                 )
+                                      ) {
+                                          Text("settings".localized(for: language))
+                        }
+                )
             }
-            
         }
     }
     
