@@ -1,0 +1,9 @@
+[submodule "SettingsKit"]
+	path = SettingsKit
+	url = git@github.com:iOSerler/SettingsKit.git
+[submodule "DonationKit"]
+	path = DonationKit
+	url = git@github.com:iOSerler/DonationKit.git
+[submodule "NotificationKit"]
+	path = NotificationKit
+	url = git@github.com:iOSerler/NotificationKit.git
