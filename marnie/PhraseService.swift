@@ -11,16 +11,16 @@ class PhraseService {
     
     var phrasesDictionary: [String:[Phrase]]
     
-    var locale: String
+    var language: String
     
-    init(locale: String) {
-        self.locale = locale
+    init(language: String) {
+        self.language = language
         phrasesDictionary = Bundle.main.decode([String:[Phrase]].self, from: "Phrase.json")
     }
     
     var encouragement: String {
         if let phrase = phrasesDictionary["encouragement"]?.randomElement() {
-            return locale == "ru" ? phrase.ru : phrase.en
+            return language == "ru" ? phrase.ru : phrase.en
         }
         return ""
         
@@ -28,21 +28,21 @@ class PhraseService {
     
     var lessonStarted: String {
         if let phrase = phrasesDictionary["lessonStarted"]?.randomElement() {
-            return locale == "ru" ? phrase.ru : phrase.en
+            return language == "ru" ? phrase.ru : phrase.en
         }
         return ""
     }
     
     var greeting: String {
         if let phrase = phrasesDictionary["greeting"]?.randomElement() {
-            return locale == "ru" ? phrase.ru : phrase.en
+            return language == "ru" ? phrase.ru : phrase.en
         }
         return ""
     }
     
     var farewell: String {
         if let phrase = phrasesDictionary["farewell"]?.randomElement() {
-            return locale == "ru" ? phrase.ru : phrase.en
+            return language == "ru" ? phrase.ru : phrase.en
         }
         return ""
     }

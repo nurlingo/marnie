@@ -11,12 +11,12 @@ class VocabularyService {
     
     var topicVocabulary: [Vocabulary]
     
-    var locale: String
+    var language: String
     var topic: Topic
     
-    init(locale: String, topic: Topic) {
+    init(language: String, topic: Topic) {
         
-        self.locale = locale
+        self.language = language
         self.topic = topic
         
         let allTopics = Bundle.main.decode([String:[Vocabulary]].self, from: "Vocabulary.json")
@@ -24,11 +24,11 @@ class VocabularyService {
     }
     
     var topicTitle: String {
-        locale == "ru" ? topic.ru : topic.en
+        language == "ru" ? topic.ru : topic.en
     }
     
     var words: [String] {
-        locale == "ru" ? topicVocabulary.map({$0.ru}) : topicVocabulary.map({$0.en})
+        language == "ru" ? topicVocabulary.map({$0.ru}) : topicVocabulary.map({$0.en})
     }
     
     var emojis: [String] {
