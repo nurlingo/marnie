@@ -75,7 +75,7 @@ struct MainView: View {
                                                     .willMoveToDonationScreen
                                                  )
                                       ) {
-                                          Text("settings".localized(for: language))
+                                          Image(systemName: "gear")
                         }
                 )
             }
