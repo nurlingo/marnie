@@ -26,7 +26,6 @@ struct PurchaseView: UIViewControllerRepresentable {
         successImage = UIImage(named: "heart")
 
         let statementText: String
-        var highlightedText: String?
         let successText: String
         let successButtonTitle: String
 
@@ -37,7 +36,6 @@ struct PurchaseView: UIViewControllerRepresentable {
             successButtonTitle = "Amen".localized(for: language)
         case false:
             statementText = "StatementPitch".localized(for: language)
-            highlightedText = "StatementPitchHighlighted".localized(for: language)
             successText = "Thanks".localized(for: language)
             successButtonTitle = "Amen".localized(for: language)
         }
@@ -53,7 +51,6 @@ struct PurchaseView: UIViewControllerRepresentable {
             title: "Donate".localized(for: language),
             statementImage: statementImage,
             statementLabelText: statementText,
-            highlightedLabelText: highlightedText,
             purchaseButtonTitle: "Donate".localized(for: language),
             isSecondaryButtonHidden: true,
             successImage: successImage,
