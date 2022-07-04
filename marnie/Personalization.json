@@ -1,0 +1,117 @@
+[
+    {
+        "id": 1,
+        "type": "singleChoice",
+        "image": "",
+        "titleEn": "Choose app language",
+        "titleRu": "Выберите язык приложения",
+        "descriptionEn": "",
+        "descriptionRu": "",
+        "optionsData": [
+            {
+               "id": 1,
+               "emoji": "🇺🇸",
+               "textEn": "English",
+               "textRu": "English"
+            },
+            {
+               "id": 2,
+               "emoji": "🇷🇺",
+               "textEn": " Русский",
+               "textRu": " Русский"
+            }
+         ],
+    },
+    {
+        "id": 2,
+        "type": "checkbox",
+        "image": "",
+        "titleEn": "How did your hear about us?",
+        "titleRu": "Как вы о нас узнали?",
+        "descriptionEn": "Tell us how you knew about Marnie to recommend it to more learners like you.",
+        "descriptionRu": "Пожалуйста расскажите нам, чтобы мы лучше понимали как дальше продвигать наше приложение.",
+        "optionsData": [
+            {
+               "id": 1,
+               "emoji": "🤗",
+               "textEn": "Friends/Family",
+               "textRu": "Друзья"
+            },
+            {
+               "id": 2,
+               "emoji": "🔎",
+               "textEn": "Google Search",
+               "textRu": "Поиск в Google/Yandex"
+            },
+            {
+               "id": 3,
+               "emoji": "📱",
+               "textEn": "App Store",
+               "textRu": "App Store"
+            },
+            {
+               "id": 7,
+               "emoji": "🤔",
+               "textEn": "Other",
+               "textRu": "Другое"
+            }
+         ]
+    },
+    {
+        "id": 3,
+        "type": "checkbox",
+        "image": "",
+        "titleEn": "What’s your interest?",
+        "titleRu": "Что вы хотели бы изучать?",
+        "descriptionEn": "Please tell us your preferences so we can serve you better learning content.",
+        "descriptionRu": "Можно отметить сразу несколько вариантов.",
+        "optionsData": [
+            {
+               "id": 1,
+               "emoji": "🔠",
+               "textEn": "Alphabet & Letters",
+               "textRu": "Алфавит/Буквы"
+            },
+            {
+               "id": 2,
+               "emoji": "📖",
+               "textEn": "Learning to read",
+               "textRu": "Умение читать"
+            },
+            {
+               "id": 3,
+               "emoji": "📚",
+               "textEn": "Vocabulary",
+               "textRu": "Словарный запас"
+            },
+            {
+               "id": 4,
+               "emoji": "🗣",
+               "textEn": "Speaking & Phrases",
+               "textRu": "Фразы и предложения"
+            },
+            {
+               "id": 5,
+               "emoji": "✍️",
+               "textEn": "Grammar",
+               "textRu": "Грамматика"
+            },
+            {
+               "id": 6,
+               "emoji": "🤔",
+               "textEn": "Other",
+               "textRu": "Другое"
+            }
+         ]
+    },
+    {
+        "id": 4,
+        "type": "image",
+        "image": "Learning-bro",
+        "titleEn": "You’re all set!",
+        "titleRu": "Готово!",
+        "descriptionEn": "Welcome to Marnie and enjoy your learning.",
+        "descriptionRu": "Добро пожаловать. Мы надеемся вам понравиться наш апп.",
+        "optionsData": []
+    }
+]

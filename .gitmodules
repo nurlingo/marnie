@@ -7,3 +7,6 @@
 [submodule "NotificationKit"]
 	path = NotificationKit
 	url = git@github.com:iOSerler/NotificationKit.git
+[submodule "PersonalizationKit"]
+	path = PersonalizationKit
+	url = git@github.com:iOSerler/PersonalizationKit.git

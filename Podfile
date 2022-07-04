@@ -7,5 +7,5 @@ target 'marnie' do
   pod 'NotificationKit', :path => "./NotificationKit"
   pod 'DonationKit', :path => "./DonationKit"
   pod 'SettingsKit', :path => "./SettingsKit"
-
+  pod 'PersonalizationKit', :path => "./PersonalizationKit"
 end
