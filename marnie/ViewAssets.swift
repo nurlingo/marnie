@@ -60,7 +60,7 @@ struct ViewAssets: PersonalizationAssets {
 var viewAssets = ViewAssets(
     titleFont: "Rubik-Medium",
     descriptionFont: "Rubik-Regular",
-    mainTextColor: #colorLiteral(red: 0.01960784314, green: 0.2941176471, blue: 0.2823529412, alpha: 1),
+    mainTextColor: #colorLiteral(red: 0.1019607843, green: 0.1803921569, blue: 0.1764705882, alpha: 1),
     descriptionTextColor: #colorLiteral(red: 0.6078431373, green: 0.6196078431, blue: 0.662745098, alpha: 1),
     detailsTextColor: #colorLiteral(red: 0.3725490196, green: 0.3960784314, blue: 0.4588235294, alpha: 1),
     copyrightTextColor: #colorLiteral(red: 0.7294117647, green: 0.7450980392, blue: 0.7725490196, alpha: 1),
